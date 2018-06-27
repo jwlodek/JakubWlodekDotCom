@@ -26,6 +26,11 @@
     padding-top: 4px;
 }
 
+.divider {
+    margin-bottom: 30px;
+    height: 2px;
+    border-color: #000099
+}
 .pinned-project {
     background-color: #0099ff;
     width: 90%;
