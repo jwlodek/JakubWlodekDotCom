@@ -1,3 +1,20 @@
+.project-heading {
+    color: #000099;
+    font-size: 24px;
+    font-family: monospace;
+    text-align: center;
+    font-weight: normal;
+}
+
+.project-heading a {
+    float: right;
+    padding-right: 5px;
+    margin: 0;
+    border: 0;
+    width: 64px;
+    height: auto;
+}
+
 .pinned-project {
     background-color: #0099ff;
     width: 90%;
