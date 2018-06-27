@@ -13,13 +13,13 @@ body {
 
 /* styling for background of header */
 .headerwrapper{
-    background-color: #00ccff;
+    background-color: #0099ff;
     width: 100%;
 }
 
 /* styling for page headers */
 .header {
-    color: blue;
+    color: #000099;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -79,7 +79,7 @@ body {
     text-align: center;
     border-style: solid;
     background-color: #000099;
-    color: #00ccff;
+    color: #0099ff;
     border: 0;
     padding-left: 0;
     padding-right:0;
@@ -112,13 +112,15 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin: 0;
-    color: #00ccff;
+    color: #0099ff;
     text-align: center;
     font-size: 48px;
     align-content: center;
     float: left;
     border: 0;
     font-family: monospace;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 
 }
 
