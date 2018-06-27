@@ -1,18 +1,29 @@
 .project-heading {
     color: #000099;
+    padding-top: 10px;
     font-size: 24px;
     font-family: monospace;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
 }
 
-.project-heading a {
+.project-heading .tall-icon{
     float: right;
     padding-right: 5px;
     margin: 0;
     border: 0;
     width: 64px;
     height: auto;
+}
+
+.project-heading .short-icon {
+    float: right;
+    padding-right: 5px;
+    margin: 0;
+    border: 0;
+    width: 64px;
+    height: auto;
+    padding-top: 4px;
 }
 
 .pinned-project {
@@ -52,15 +63,6 @@
     font-family: monospace;
 }
 
-.pinned-project h3 {
-    padding-top: 20px;
-    color: #000099;
-    font-size: 24px;
-    font-family: monospace;
-    text-align: center;
-    font-weight: normal;
-}
-
 .project {
     background-color: #0099ff;
     width: 90%;
@@ -96,13 +98,4 @@
     float: right;
     font-size: 20px;
     font-family: monospace;
-}
-
-.project h3 {
-    padding-top: 20px;
-    color: #000099;
-    font-size: 24px;
-    font-family: monospace;
-    text-align: center;
-    font-weight: normal;
 }
