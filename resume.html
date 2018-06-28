@@ -10,35 +10,41 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 </head>
 <body>
+
+    <!--Header-->
     <div class="headerwrapper">
         <div>
             <h1 class="header">My Resume/CV</h1>
         </div>
     </div>
-    <div class = "button_group">
-        <form action = "index.html">
-            <button type="submit" class = "button">Home</button>
-        </form>
-        <form action = "projects.html">
-            <button type="submit" class = "button">Projects</button>
-        </form>
+
+    <!--Navigation bar-->
+    <div class = "navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <form action="projects.html">
+                <button type="submit" class="dropbtn">Projects</button>
+            </form>
+            <div class="dropdown-content">
+                <a href="projects.html#project1">Focus Stack 3D Reconstruction</a>
+                <a href="projects.html#project2">Rowers Meet Dating Site</a>
+            </div>
+        </div>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a> 
     </div>
-    <p class="banner">Welcome!</p>
-    <div class = "button_group">
-        <form action="resume.html">
-            <button type="submit" class = "button">Resume</button>
-        </form>
-        <form action="contact.html">
-            <button type="submit" class = "button">Contact Me</button>
-        </form>
-    </div>
+
+    <!--Footer-->
     <div class="footer">
         <div class = "social-media-links">
             <a href="https://github.com/jwlodek" >
-                <img class="footer-link" src = "assets/GitHub_Logo_White.png" alt="Github" 
+                <img class="footer-link-github" src = "assets/GitHub_Logo_White.png" alt="Github" 
                     onmouseover="image_hover(this, github_logo)" onmouseout="image_hover(this, github_logo_white)"/>
             </a>
-
+            <a href="https://www.linkedin.com/in/jakub-wlodek-67b5a7107" >
+                <img class="footer-link-linkedin" src = "assets/Logo-White-128px-TM.png" alt="LinkedIn"
+                    onmouseover="image_hover(this, linkedin_logo_black)" onmouseout="image_hover(this, linkedin_logo)" />
+            </a>
         </div>
     </div>
 </body>
