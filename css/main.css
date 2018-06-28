@@ -20,10 +20,9 @@ body {
 /* styling for page headers */
 .header {
     color: #000099;
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 0;
+    padding-left: 75px;
     padding-right: 0;
     margin: 0;
     border: 0;
