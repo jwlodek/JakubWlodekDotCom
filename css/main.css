@@ -14,7 +14,7 @@ body {
 
 /* styling for background of header */
 .headerwrapper{
-    background-color: #0099ff;
+    background-color: #84c8f5;
     width: 100%;
 }
 
@@ -89,6 +89,7 @@ body {
     font-family: monospace;
     font-size: 24px;
     float: left;
+    font-weight: bold;
     display: block;
     transition-duration: 0.5s;
 }
@@ -106,6 +107,7 @@ body {
     border: none;
     outline: none;
     color: #0099ff;
+    font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #000099;
@@ -131,7 +133,8 @@ body {
 .dropdown-content a {
     float: none;
     width: 100%;
-    color: #0099ff;
+    color: #84c8f5;
+    font-weight: bold;
     background-color: #000099;
     padding: 10px 10px;
     text-decoration: none;
