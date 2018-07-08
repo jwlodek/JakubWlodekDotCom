@@ -175,8 +175,8 @@ body {
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
-    width: 30%;
-    height: auto;
+    height: 50px;
+    width: auto;
 }
 
 .footer-link-linkedin {
@@ -184,6 +184,6 @@ body {
     padding-top: 22px;
     padding-right: 20px;
     padding-left: 20px;
-    width: 30%;
-    height: auto;
+    height: 50px;
+    width: auto;
 }
