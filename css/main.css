@@ -159,31 +159,23 @@ body {
     margin-top: 100px;
     bottom: 0;
     height: 75px;
+    padding-top: 20px;
 }
 
-.social-media-links {
-    width: 30%;
+.footer-social {
     float: right;
-    height: 75px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+    margin-left: 20px;
+    vertical-align: center;
+    
 }
 
-.footer-link-github {
-    float: left;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+.footer-social .github-logo {
     height: 50px;
     width: auto;
 }
 
-.footer-link-linkedin {
-    float: left;
-    padding-top: 22px;
-    padding-right: 20px;
-    padding-left: 20px;
-    height: 50px;
+.footer-social .linkedin-logo {
+    height: 37px;
     width: auto;
 }
+
