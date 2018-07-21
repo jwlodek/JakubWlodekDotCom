@@ -3,6 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
     <title>Jakub Wlodek Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/mainscripts.js"></script>
@@ -14,21 +19,21 @@
 <body>
 
     <!--Header-->
-    <div class="headerwrapper">
+    <div class="headerwrapper-local">
         <div>
-            <h1 class="header">Jakub Wlodek Personal Page!</h1>
+            <h1 class="header-local">Jakub Wlodek Personal Page!</h1>
         </div>
     </div>
     
 
     <!--Navigation Bar-->
-    <div class = "navbar">
+    <div class = "navbar-local">
         <a href="index.html">Home</a>
-        <div class="dropdown">
+        <div class="dropdown-local">
             <form action="projects.html">
-                <button type="submit" class="dropbtn">Projects</button>
+                <button type="submit" class="dropbtn-local">Projects</button>
             </form>
-            <div class="dropdown-content">
+            <div class="dropdown-content-local">
                 <a href="projects.html#project1">Focus Stack 3D Reconstruction</a>
                 <a href="projects.html#project2">Rowers Meet Dating Site</a>
             </div>
@@ -41,7 +46,14 @@
         <div class="text-section">
             <h3>About Me!</h3>
             <hr/>
-            <p>Hello! Welcome to my website! My name is Jakub Wlodek, and I am a Computer Science and Applied Mathematics double major at Stony Brook University, currently in my senior year. I have a passion for all things technological, and I also greatly enjoy spending time outside or on the water! </p>
+            <p>Hello! Welcome to my website! My name is Jakub Wlodek, and I am a Computer Science and Applied Mathematics 
+                double major at Stony Brook University, currently in my senior year. I currently work at Brookhaven National
+                Laboratory as an intern for the controls group at the National Synchrotron Light Source II. My work primarily
+                revolves around writing Computer Vision based tools for scientists, along with developing new plugins and detector
+                drivers for the open source area detector project. If you would like to learn more about these projects, make sure
+                to visit the "Projects" page! I also work as a tutor at the Educational Opportunity Program at Suffolk County
+                Community College. Outside of work and school, I have a passion for all things technological, and I also 
+                greatly enjoy spending time outside or on the water. In fact, I even row on the Stony Brook University Crew team!</p>
         </div>
         <div class="image-w-caption">
             <img src="assets/thumb-1920-82317.jpg" alt="temp" />
@@ -49,7 +61,7 @@
         </div>
         <br style="clear: both;" />
     </div>
-
+    <!--
     <div class="home-entry">
         <div class="image-w-caption">
             <img src="assets/thumb-1920-82317.jpg" alt="temp" />
@@ -78,17 +90,46 @@
         </div>
         <br style="clear: both;" />
     </div>
-
+    -->
+    
     <!--Footer-->
-    <div class="footer">
-        <a class="footer-social" href="https://github.com/jwlodek" >
-            <img class="github-logo" src = "assets/GitHub_Logo_White.png" alt="Github" 
-                onmouseover="image_hover(this, github_logo)" onmouseout="image_hover(this, github_logo_white)"/>
-        </a>
-        <a class="footer-social" href="https://www.linkedin.com/in/jakub-wlodek-67b5a7107" >
-            <img class="linkedin-logo" src = "assets/Logo-White-128px-TM.png" alt="LinkedIn"
-                onmouseover="image_hover(this, linkedin_logo_black)" onmouseout="image_hover(this, linkedin_logo)" />
-        </a>
-    </div>
+    <footer class="page-footer font-small footer-local">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-7 footer-orgs-local">
+                    <h5 class="font-weight-bold text-uppercase mt-6 mb-6">Some interesting websites:</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.highdefdigest.com"><u>High Def Digest: Blu-Ray and UltraHD reviews</u></a></li>
+                        <li><a href="http://www.stonybrookcrew.com"><u>The Stony Brook Rowing team website</u></a></li>
+                        <li><a href="http://stonybrookusg.org/"><u>Stony Brook Undergraduate Student Government</u></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 footer-social-local">
+                    <!--<h5 class="font-weight-bold text-uppercase mt-6 mb-6">Some other places to find out more</h5>-->
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class=social-links>
+                                <a href="https://www.github.com/jwlodek">
+                                    <img class="social-media-local" src="assets/GitHub-Mark-Light-64px.png"
+                                        onmouseover="image_hover(this, mark)" onmouseout="image_hover(this, mark_light)"/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/jakub-wlodek-67b5a7107">
+                                    <img class="social-media-local" src="assets/In-White-66px-TM.png" 
+                                        onmouseover="image_hover(this, linkedin_logo_black)" onmouseout="image_hover(this, linkedin_logo)"/>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <br style="clear: both;" />
+                    <p class="footer-copy-local">Copyright(c): 2018 - Jakub Wlodek</p>
+                </div>
+            </div>            
+        </div>
+    </footer>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>
