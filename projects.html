@@ -56,13 +56,15 @@
         </div>
         <hr class="divider">
         <div class="video-container-local"><iframe src="https://www.youtube.com/embed/FdpdAdoirwA" frameborder="0" allow="" allowfullscreen></iframe></div>
-        <p>During an internship at Brookhaven National Laboratory, I constructed software
+        <p>During my internship at Brookhaven National Laboratory, I constructed software
             that used focus stacking as a way of collecting high quality images with a shallow depth of field
             fixed microscope, as well as recreating three dimensional depth data. The video to the left shows some of my results.
             It is the result of collecting 18 images of a mineral with a 5x microscope at a shallow depth of focus.
             The images were then merged into one, to create a single in-focus image. Finally, using OpenGL, the merged image,
             along with depth information that was collected simultaneously was used to generate the 3D model.
-            This project is discussed further in my publications which can be found in the Resume/CV portion of this website.
+            This project has resulted in two co-authored publications, one of which, "On-Axis 3D Microscope For X-Ray Beamlines
+            at NSLS-II," is linked above. The second half of the publication discusses the method used in writing the software,
+            and shows some more sample images. Additionally, another 3D video has been uploaded to the youtube channel linked above.
         </p>
         <br style="clear: both;" />
     </div>
@@ -87,7 +89,7 @@
         <p>As a way to simplify sample managment at National Synchrotron Light Source II beamlines, I worked on constructing
             a barcode reader plugin for the area detector project (A link to the areaDetector github page can be found in the 
             footer of this site). The plugin integrated the opencv and 
-            zbar libraries for image processing and barcode detection respectively, and wrote detercted barcode messages into 
+            zbar libraries for image processing and barcode detection respectively, and wrote detected barcode messages into 
             Process Variables, or PVs. Database integration is the next piece of the puzzle, and current work is focused on adding
             built in support for MySQL and MongoDB databases, with more specialized solutions being added later. The flexibility of
             this solution, however, lies in the fact that barcode/QR code information is stored in PVs, which can be accessed through
