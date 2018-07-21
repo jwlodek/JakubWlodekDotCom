@@ -32,7 +32,8 @@
             </form>
             <div class="dropdown-content-local">
                 <a href="projects.html#project1">Focus Stack 3D Reconstruction</a>
-                <a href="projects.html#project2">Rowers Meet Dating Site</a>
+                <a href="projects.html#project2">ADPluginBar EPICS Barcode Reader</a>
+                <a href="projects.html#project3">Rowers Meet Dating Website</a>
             </div>
         </div>
         <a href="resume.html">Resume</a>
@@ -70,8 +71,38 @@
     <a name="project2">
     <div class="project">
         <div class="project-heading">
+            <h3>ADPluginBar EPICS Barcode reader plugin
+                <a class="short-icon" href="https://jwlodek.github.io/ADPluginBar">
+                    <img src="assets/external_link.png" alt="External"
+                        onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)" />
+                </a>
+                <a class="short-icon" href="https://github.com/jwlodek/ADPluginBar">
+                    <img src="assets/GitHub-Mark-64px.png" alt="Github"
+                        onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)" />
+                </a>
+            </h3>
+        </div>
+        <hr class="divider" />
+        <img src="assets/Barcodemain.png" alt="Barcode main screen" />
+        <p>As a way to simplify sample managment at National Synchrotron Light Source II beamlines, I worked on constructing
+            a barcode reader plugin for the area detector project (A link to the areaDetector github page can be found in the 
+            footer of this site). The plugin integrated the opencv and 
+            zbar libraries for image processing and barcode detection respectively, and wrote detercted barcode messages into 
+            Process Variables, or PVs. Database integration is the next piece of the puzzle, and current work is focused on adding
+            built in support for MySQL and MongoDB databases, with more specialized solutions being added later. The flexibility of
+            this solution, however, lies in the fact that barcode/QR code information is stored in PVs, which can be accessed through
+            a variety of methods including through a shell script or a python program, meaning that regardless of the database implementation
+            in use at a particular beamline, even if the plugin itself doesn't natively support it, intergating it should not be difficult.
+        </p>
+        <br style="clear:both" />
+    </div>
+    </a>
+
+    <a name="project3">
+    <div class="project">
+        <div class="project-heading">
             <h3>Rowers Meet Dating Website
-                <a class="tall-icon" href="https://github.com/jwlodek/DatingApp">
+                <a class="short-icon" href="https://github.com/jwlodek/DatingApp">
                     <img src="assets/GitHub-Mark-64px.png" alt="Github" 
                         onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)" />
                 </a>
@@ -96,8 +127,8 @@
                     <h5 class="font-weight-bold text-uppercase mt-6 mb-6">Some interesting websites:</h5>
                     <ul class="list-unstyled">
                         <li><a href="https://www.highdefdigest.com"><u>High Def Digest: Blu-Ray and UltraHD reviews</u></a></li>
+                        <li><a href="https://github.com/areaDetector"><u>Area Detector on Github</u></a></li>
                         <li><a href="http://www.stonybrookcrew.com"><u>The Stony Brook Rowing team website</u></a></li>
-                        <li><a href="http://stonybrookusg.org/"><u>Stony Brook Undergraduate Student Government</u></a></li>
                     </ul>
                 </div>
                 <div class="col-md-5 footer-social-local">
