@@ -13,13 +13,13 @@ body {
 }
 
 /* styling for background of header */
-.headerwrapper{
+.headerwrapper-local{
     background-color: #84c8f5;
     width: 100%;
 }
 
 /* styling for page headers */
-.header {
+.header-local {
     color: #000099;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -64,7 +64,7 @@ body {
 }
 
 /* styling for top-of-page button group */
-.navbar{
+.navbar-local{
     width: 100%;
     background-color: #000099;
     margin: 0;
@@ -73,7 +73,7 @@ body {
     float: left;
 }
 
-.navbar a{
+.navbar-local a{
     text-align: center;
     border-style: solid;
     background-color: #000099;
@@ -94,16 +94,16 @@ body {
     transition-duration: 0.5s;
 }
 
-.navbar .dropdown {
+.navbar-local .dropdown-local {
     float: left;
     overflow: hidden;
     width: 13%
 }
 
-.dropdown .dropbtn {
+.dropdown-local .dropbtn-local {
     font-size: 24px;
     width: 100%;        
-    text-decoration: underline;  
+    /*text-decoration: underline;  */
     border: none;
     outline: none;
     color: #0099ff;
@@ -117,12 +117,13 @@ body {
     transition-duration: 0.5s;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar-local a:hover, .dropdown-local:hover .dropbtn-local:hover {
     background-color: red;
+    text-decoration: underline;
     color: #000099;
 }
 
-.dropdown-content {
+.dropdown-content-local {
     display: none;
     position: absolute;
     width: auto;
@@ -130,7 +131,7 @@ body {
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content-local a {
     float: none;
     width: 100%;
     color: #84c8f5;
@@ -142,48 +143,48 @@ body {
     text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content-local a:hover {
     background-color: #000000;
     color: red;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-local:hover .dropdown-content-local {
     display: block;
 }
 
 
 /* footer at the bottom of each page */
-.footer {
+.footer-local {
+    margin-top: 50px;
+    padding-top: 20px;
+    /* padding-bottom: 10px; */
     background-color: #000099;
-    width: 100%;
-    margin-top: 100px;
-    bottom: 0;
-    height: 75px;
+    background-repeat: repeat;
+    color: white;
+    
 }
 
-.social-media-links {
-    width: 30%;
+.footer-local a {
+    color: white;
+}
+
+.footer-orgs-local {
+    padding-left: 70px;
+}
+
+.footer-social-local {
+    padding-right: 70px;
+    text-align: right;
+}
+
+.social-media-local {
+    height: 40px;
+    width: auto;
     float: right;
-    height: 75px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
-
-.footer-link-github {
-    float: left;
     padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 30%;
-    height: auto;
+    margin-left: 20px;
 }
 
-.footer-link-linkedin {
-    float: left;
-    padding-top: 22px;
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 30%;
-    height: auto;
+.footer-copy-local {
+    margin-top: 20px;
 }
