@@ -1,11 +1,14 @@
 .project-heading {
-    color: #000099;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 10px;
-    font-size: 24px;
-    font-family: monospace;
+}
+
+.project-heading h3 {
+    font-family: Helvetica;
     text-align: left;
-    font-weight: normal;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000099;
 }
 
 .project-heading .tall-icon{
@@ -27,11 +30,7 @@
     padding-top: 4px;
 }
 
-.divider {
-    margin-bottom: 30px;
-    height: 2px;
-    border-color: #000099
-}
+
 .pinned-project {
     background-color: #84c8f5;
     width: 90%;
@@ -66,8 +65,7 @@
     padding-left: 10px;
     float: right;
     font-size: 20px;
-    font-weight: bold;
-    font-family: monospace;
+    font-family: Helvetica;
 }
 
 .project {
@@ -125,6 +123,5 @@
     padding-left: 10px;
     float: right;
     font-size: 20px;
-    font-weight: bold;
-    font-family: monospace;
+    font-family: Helvetica;
 }
