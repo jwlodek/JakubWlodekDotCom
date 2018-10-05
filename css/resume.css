@@ -1,0 +1,97 @@
+.link-section {
+    background-color: #84c8f5;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    border-radius: 25px;
+}
+
+.link-section h3 {
+    font-family: Helvetica;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 15px;
+    color: #000099;
+}
+
+.link-element{
+    vertical-align: top;
+    display: inline-block;
+    color: #000099;
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: normal;
+    width: 25%;
+    margin-right: 25px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #000099;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.link-element h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.link-element p{
+    text-align: left;
+}
+
+.link-element .tall-icon {
+    float: right;
+    margin:0;
+    padding-left: 5px;
+    border: 0;
+    width: 48px;
+    height: auto;
+}
+
+.link-element .short-icon {
+    float: right;
+    margin: 0;
+    padding-left: 5px;
+    border: 0;
+    width: 48px;
+    height: auto;
+}
+
+.short-icon img{
+    width: 24px;
+}
+
+
+.resume-section {
+    background-color: #84c8f5;
+    width: 90%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    border-radius: 25px; 
+}
+
+.resume-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000099;
+    font-family: Helvetica;
+    padding-top: 15px;
+}
+
+.resume-section-pdf {
+    padding: 20px;
+    width: 100%;
+    height: 1200px;
+}

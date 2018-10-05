@@ -195,3 +195,9 @@ body {
     height: 2px;
     border-color: #000099
 }
+
+.divider-short {
+    margin-bottom: 5px;
+    height: 2px;
+    border-color: #000099;
+}

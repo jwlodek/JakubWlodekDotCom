@@ -23,7 +23,7 @@
     width: 30.3%;
     background-color: lightgray;
     float: left;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
@@ -50,7 +50,7 @@
     margin: auto;
     display: block;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 0;
 }
 
 .image-w-caption {
@@ -71,7 +71,7 @@
     margin: auto;
     display: block;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 0;
 }
 
 .image-w-caption p {
