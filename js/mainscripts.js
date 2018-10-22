@@ -11,3 +11,23 @@ var external_link_white = "assets/external_link_white.png";
 function image_hover(element, asset){
     element.setAttribute('src', asset);
 }
+
+// For mobile redirection
+function isAndroid(){
+    return window.navigator.userAgent.match(/Android/i);
+}
+
+function isIphone(){
+    return window.navigator.userAgent.match(/iPhone|iPad|iPod/i);
+}
+
+function isMobile(){
+    if(isAndroid()) return true;
+    if(isIphone()) return true;
+    return false;
+}
+
+function mobileRedirect(){
+    //window.alert(window.navigator.userAgent);
+    if(isMobile()) window.location.href = "mobile.html";
+}
