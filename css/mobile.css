@@ -1,0 +1,50 @@
+.mobile-heading-local {
+    width: 100%;
+    text-align: center;
+    background-color: #84c8f5;
+    color: #000099;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-size-adjust: initial;
+    font-family: Helvetica;
+}
+
+.mobile-links-local {
+    background-color: #000099;
+    color: #84c8f5;
+}
+
+.mobile-links-local:active {
+    background-color: black;
+    color: red;
+}
+
+.mobile-section-local {
+    width:100%;
+}
+
+.mobile-section-local img{
+    width: 100%;
+}
+
+.mobile-section-local p {
+    margin: auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align:center;
+    color: #000099;
+    background-color: #84c8f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mobile-divider-local {
+    border-width: 4px;
+    border-color: blue;
+    border-style: inset;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
