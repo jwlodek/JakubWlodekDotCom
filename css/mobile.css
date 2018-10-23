@@ -34,6 +34,7 @@
 .mobile-section-local {
     width:100%;
     margin-top: 0.5em;
+    text-align: center;
 }
 
 .mobile-section-local img{
@@ -53,6 +54,15 @@
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.mobile-section-local h3 {
+    padding: .5em;
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 5em;
+    color: #000099;
+    text-decoration: underline;
 }
 
 .mobile-navbar-local{
