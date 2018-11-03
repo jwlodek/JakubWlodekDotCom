@@ -29,5 +29,5 @@ function isMobile(){
 
 function mobileRedirect(){
     //window.alert(window.navigator.userAgent);
-    if(true) window.location.href = "mobile.html";
+    if(isMobile()) window.location.href = "mobile.html";
 }
