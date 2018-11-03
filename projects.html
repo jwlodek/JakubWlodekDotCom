@@ -34,9 +34,19 @@
                 <a href="projects.html#project1">Focus Stack 3D Reconstruction</a>
                 <a href="projects.html#project2">ADPluginBar EPICS Barcode Reader</a>
                 <a href="projects.html#project3">Rowers Meet Dating Website</a>
+                <a href="projects.html#project4">ADCompVision Area Detector Plugin</a>
+                <a href="projects.html#project5">Other Projects</a>
             </div>
         </div>
-        <a href="resume.html">Resume</a>
+        <div class="dropdown-local">
+                <form action="resume.html">
+                    <button type="submit" class="dropbtn-local">Resume</button>
+                </form>
+                <div class="dropdown-content-local">
+                    <a href="resume.html#downloads">Download links</a>
+                    <a href="resume.html#resume">Resume</a>
+                </div>
+            </div>
         <a href="contact.html">Contact</a> 
     </div>
 
@@ -116,6 +126,53 @@
             a dating website using HTML, CSS, Javascript, and Bootstrap for the front end portion, and Java and MySQL for the 
             website backend. We used .jsp files and servlets to integrate the html with the output of the jdbc based SQL queries,
             and we hosted the completed website on an Apache server. Source code for the project is available on my Github account.
+        </p>
+        <br style="clear: both;" />
+    </div>
+    </a>
+
+    <a name="project4">
+        <div class="project">
+            <div class="project-heading">
+                <h3>ADCompVision
+                    <a class="short-icon" href="https://github.com/jwlodek/ADCompVision">
+                        <img src="assets/GitHub-Mark-64px.png" alt="Github"
+                            onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)" />
+                    </a>
+                </h3>
+            </div>
+            <hr class="divider" />
+            <img src="assets/CompVisionPlugin.png" alt="AD Comp Vision" />
+            <p>Using the experience I gained when writing the ADPluginBar reader and the 3D image stacking software, I began
+                constructing an implementation of core OpenCV Computer Vision functions for area detector in the form of a plugin.
+                Some currently added functionality is edge detection and centroid detection. The initial testing of the plugin involved 
+                computing the centroid of samples on a stand in order for automation to be able to align sample centroids. Centroid 
+                computation was performed by first cropping the image to a region of interest (this was done through the area detector
+                software itself, using the ROI plugin and passing the result to the ADCompVision plugin), then thresholding the image, 
+                and finally computing contours and their centroids using OpenCV. Source code for the entire plugin is available on Github.
+            </p>
+            <br style="clear: both;" />
+    </div>
+    </a>
+
+    <a name="project5">
+    <div class="project">
+        <div class="project-heading">
+            <h3>Other Projects
+                <a class="short-icon" href="https://github.com/jwlodek">
+                    <img src="assets/GitHub-Mark-64px.png" alt="Github"
+                        onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)" />
+                </a>
+            </h3>
+        </div>
+        <hr class="divider" />
+        <img src="assets/OtherProjects.png" alt="Other Project Imgaes" />
+        <p>Many of the other projects I have worked on can be found on my github account. These include:
+            a Cryptogram encoder/decoder that I wrote in order to simplify completing my final project for 
+            AMS 303 Graph Theory, a program used to calculate the expected score of a particular card game, 
+            a python script for organizing area detector configuration files, and both this website and a resesign
+            of the Stony Brook rowing team website, a current in-progress project.
+
         </p>
         <br style="clear: both;" />
     </div>

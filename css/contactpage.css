@@ -1,0 +1,22 @@
+.contact-entry-pinned {
+    width: 90%;
+    margin: auto;
+    border: auto;
+    border-radius: 25px;
+    background-color: #84c8f5;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.contact-entry-heading {
+    padding-left: 10px;
+}
+
+.contact-entry-heading h3 {
+    font-family: Helvetica;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000099;
+}
+

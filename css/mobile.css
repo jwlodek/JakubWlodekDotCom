@@ -1,0 +1,131 @@
+.mobile-heading-local {
+    text-align: center;
+    background-color: #84c8f5;
+    color: #000099;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size-adjust: initial;
+    font-family: Helvetica;
+    font-size: 7em;
+}
+
+.mobile-link-local {
+    background-color: #000099;
+    color: #84c8f5;
+    font-family: Helvetica;
+    font-size: 2.5em;
+    padding: 0.5em;
+    text-align: center;
+    text-emphasis: none;
+    width: 24.7%;
+    border: 0;
+    margin: 0;
+    
+
+}
+
+.mobile-link-local:active {
+    background-color: black;
+    color: red;
+}
+
+.mobile-section-local {
+    width:100%;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.mobile-section-local .home-photo{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.mobile-section-local .intro-local {
+    margin: auto;
+    width: 90%;
+    font-family: Helvetica;
+    font-size: 2.5em;
+    text-align:center;
+    color: #000099;
+    background-color: #84c8f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.mobile-section-local h3 {
+    padding: .5em;
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 5em;
+    color: #000099;
+    text-decoration: underline;
+}
+
+.mobile-navbar-local{
+    width: 100%;
+}
+
+.mobile-divider-local {
+    border-width: 4px;
+    border-color: blue;
+    border-style: inset;
+}
+
+.project-element-local {
+    margin: auto;
+    width: 85%;
+    font-family: Helvetica;
+    font-size: 2.5em;
+    text-align: left;
+    color: #000099;
+    background-color: #84c8f5;
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.project-element-local h4 {
+    font-family: Helvetica;
+    text-decoration: underline;
+    font-size: 1.5em;
+    float: left;
+    margin: 0.1em;
+}
+
+
+
+.tall-icon {
+    padding-left: 1em;
+    margin: 0;
+    border: 0;
+    float: right;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.tall-icon img {
+    width: 1em;
+}
+
+
+.short-icon {
+    float: right;
+    margin: 0;
+    border: 0;
+    height: auto;
+    padding-top: 0;
+    padding-left: 1em;
+    vertical-align: bottom;
+}
+
+.short-icon img {
+    width: 1em;
+}
+
+
+
