@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
     <title>Jakub Wlodek Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/mainscripts.js"></script>
@@ -14,180 +16,228 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/projectspage.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 </head>
+
 <body>
 
     <!--Header-->
     <div class="headerwrapper-local">
         <div>
-            <h1 class="header-local">Some of my Projects</h1>    
+            <h1 class="header-local">Some of my Projects</h1>
         </div>
     </div>
 
     <!--Navigation Bar-->
-    <div class = "navbar-local">
+    <div class="navbar-local">
         <a href="index.html">Home</a>
         <div class="dropdown-local">
             <form action="projects.html">
                 <button type="submit" class="dropbtn-local">Projects</button>
             </form>
             <div class="dropdown-content-local">
-                <a href="projects.html#project1">Focus Stack 3D Reconstruction</a>
-                <a href="projects.html#project2">ADPluginBar EPICS Barcode Reader</a>
-                <a href="projects.html#project3">Rowers Meet Dating Website</a>
-                <a href="projects.html#project4">ADCompVision Area Detector Plugin</a>
-                <a href="projects.html#project5">Other Projects</a>
+                <a href="projects.html#project3DReconstruction">Focus Stack 3D Reconstruction</a>
+                <a href="projects.html#projectADUVC">ADUVC EPICS areaDetector driver</a>
+                <a href="projects.html#projectADBar">ADPluginBar EPICS Barcode Reader</a>
+                <a href="projects.html#projectRowersMeet">Rowers Meet Dating Website</a>
+                <a href="projects.html#projectADCV">ADCompVision Area Detector Plugin</a>
+                <a href="projects.html#projectOther">Other Projects</a>
             </div>
         </div>
         <div class="dropdown-local">
-                <form action="resume.html">
-                    <button type="submit" class="dropbtn-local">Resume</button>
-                </form>
-                <div class="dropdown-content-local">
-                    <a href="resume.html#downloads">Download links</a>
-                    <a href="resume.html#resume">Resume</a>
-                </div>
+            <form action="resume.html">
+                <button type="submit" class="dropbtn-local">Resume</button>
+            </form>
+            <div class="dropdown-content-local">
+                <a href="resume.html#downloads">Download links</a>
+                <a href="resume.html#resume">Resume</a>
             </div>
-        <a href="contact.html">Contact</a> 
+        </div>
+        <a href="contact.html">Contact</a>
     </div>
 
     <!--Projects list-->
-    <a name="project1">
-    <div class="pinned-project">
-        <div class="project-heading">
-            <h3>Focus Stacked 3D Reconstruction
-                <a class="short-icon" href="https://www.youtube.com/channel/UC-SfBpwDIiuw41_r0qqYkZQ">
-                    <img src="assets/youtube_social_icon_red.png" alt="Youtube" 
-                        onmouseover="image_hover(this, youtube_logo_dark)" onmouseout="image_hover(this, youtube_logo)" />
-                </a>
-                <a class="tall-icon" href="http://accelconf.web.cern.ch/AccelConf/icalepcs2017/papers/webpl02.pdf">
-                    <img src="assets/Adobe_PDF_file_icon_32x32.png" alt="pdf download" />
-                </a>
-            </h3>
+    <a name="project3DReconstruction">
+        <div class="pinned-project">
+            <div class="project-heading">
+                <h3>Focus Stacked 3D Reconstruction
+                    <a class="short-icon" href="https://www.youtube.com/channel/UC-SfBpwDIiuw41_r0qqYkZQ">
+                        <img src="assets/youtube_social_icon_red.png" alt="Youtube" onmouseover="image_hover(this, youtube_logo_dark)" onmouseout="image_hover(this, youtube_logo)"
+                        />
+                    </a>
+                    <a class="tall-icon" href="http://accelconf.web.cern.ch/AccelConf/icalepcs2017/papers/webpl02.pdf">
+                        <img src="assets/Adobe_PDF_file_icon_32x32.png" alt="pdf download" />
+                    </a>
+                </h3>
+            </div>
+            <hr class="divider">
+            <div class="video-container-local">
+                <iframe src="https://www.youtube.com/embed/FdpdAdoirwA" frameborder="0" allow="" allowfullscreen></iframe>
+            </div>
+            <p>During my internship at Brookhaven National Laboratory, I constructed software that used focus stacking as a
+                way of collecting high quality images with a shallow depth of field fixed microscope, as well as recreating
+                three dimensional depth data. The video to the left shows some of my results. It is the result of collecting
+                18 images of a mineral with a 5x microscope at a shallow depth of focus. The images were then merged into
+                one, to create a single in-focus image. Finally, using OpenGL, the merged image, along with depth information
+                that was collected simultaneously was used to generate the 3D model. This project has resulted in two co-authored
+                publications, one of which, "On-Axis 3D Microscope For X-Ray Beamlines at NSLS-II," is linked above. The
+                second half of the publication discusses the method used in writing the software, and shows some more sample
+                images. Additionally, another 3D video has been uploaded to the youtube channel linked above.
+            </p>
+            <br style="clear: both;" />
         </div>
-        <hr class="divider">
-        <div class="video-container-local"><iframe src="https://www.youtube.com/embed/FdpdAdoirwA" frameborder="0" allow="" allowfullscreen></iframe></div>
-        <p>During my internship at Brookhaven National Laboratory, I constructed software
-            that used focus stacking as a way of collecting high quality images with a shallow depth of field
-            fixed microscope, as well as recreating three dimensional depth data. The video to the left shows some of my results.
-            It is the result of collecting 18 images of a mineral with a 5x microscope at a shallow depth of focus.
-            The images were then merged into one, to create a single in-focus image. Finally, using OpenGL, the merged image,
-            along with depth information that was collected simultaneously was used to generate the 3D model.
-            This project has resulted in two co-authored publications, one of which, "On-Axis 3D Microscope For X-Ray Beamlines
-            at NSLS-II," is linked above. The second half of the publication discusses the method used in writing the software,
-            and shows some more sample images. Additionally, another 3D video has been uploaded to the youtube channel linked above.
-        </p>
-        <br style="clear: both;" />
-    </div>
     </a>
 
-    <a name="project2">
-    <div class="project">
-        <div class="project-heading">
-            <h3>ADPluginBar EPICS Barcode reader plugin
-                <a class="short-icon" href="https://jwlodek.github.io/ADPluginBar">
-                    <img src="assets/external_link.png" alt="External"
-                        onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)" />
-                </a>
-                <a class="short-icon" href="https://github.com/jwlodek/ADPluginBar">
-                    <img src="assets/GitHub-Mark-64px.png" alt="Github"
-                        onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)" />
-                </a>
-            </h3>
+
+    <a name="projectADUVC">
+        <div class="project">
+            <div class="project-heading">
+                <h3>ADUVC EPICS areaDetector driver for USB Video Class Devices
+                    <a class="short-icon" href="https://jwlodek.github.io/ADUVC">
+                        <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
+                        />
+                    </a>
+                    <a class="short-icon" href="https://github.com/jwlodek/ADUVC">
+                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                        />
+                    </a>
+                </h3>
+            </div>
+            <hr class="divider" />
+            <img src="assets/UVCimage.png" alt="UVC demo image" />
+            <p>In order to gain support for USB Video Class (UVC) devices for the EPICS area detector software suite, I developed a custom driver
+                using the libusb and libuvc libraries. The current driver is available in beta version R0-1. Most of the core camera functions have
+                already been implemented, including image streaming and acquisition, image size and framerate control, and interoperability with
+                area detector plugins ranging from file saving to image processing. UVC cameras range from cheap consumer webcams to high quality 
+                industrial cameras, giving them a wide breath of use cases. Some primary use cases include test benches for further plugin development
+                (because of the simplicity of their setup), monitoring (because of their inexpensiveness), and use in small form factors (they are 
+                available in a variety of sizes and shapes including pencil cameras).
+            </p>
+            <br style="clear:both" />
         </div>
-        <hr class="divider" />
-        <img src="assets/Barcodemain.png" alt="Barcode main screen" />
-        <p>As a way to simplify sample managment at National Synchrotron Light Source II beamlines, I worked on constructing
-            a barcode reader plugin for the area detector project (A link to the areaDetector github page can be found in the 
-            footer of this site). The plugin integrated the opencv and 
-            zbar libraries for image processing and barcode detection respectively, and wrote detected barcode messages into 
-            Process Variables, or PVs. Database integration is the next piece of the puzzle, and current work is focused on adding
-            built in support for MySQL and MongoDB databases, with more specialized solutions being added later. The flexibility of
-            this solution, however, lies in the fact that barcode/QR code information is stored in PVs, which can be accessed through
-            a variety of methods including through a shell script or a python program, meaning that regardless of the database implementation
-            in use at a particular beamline, even if the plugin itself doesn't natively support it, intergating it should not be difficult.
-        </p>
-        <br style="clear:both" />
-    </div>
     </a>
 
-    <a name="project3">
-    <div class="project">
-        <div class="project-heading">
-            <h3>Rowers Meet Dating Website
-                <a class="short-icon" href="https://github.com/jwlodek/DatingApp">
-                    <img src="assets/GitHub-Mark-64px.png" alt="Github" 
-                        onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)" />
-                </a>
-            </h3>
+    <a name="projectADBar">
+        <div class="project">
+            <div class="project-heading">
+                <h3>ADPluginBar EPICS Barcode reader plugin
+                    <a class="short-icon" href="https://jwlodek.github.io/ADPluginBar">
+                        <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
+                        />
+                    </a>
+                    <a class="short-icon" href="https://github.com/jwlodek/ADPluginBar">
+                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                        />
+                    </a>
+                </h3>
+            </div>
+            <hr class="divider" />
+            <img src="assets/Barcodemain.png" alt="Barcode main screen" />
+            <p>As a way to simplify sample managment at National Synchrotron Light Source II beamlines, I worked on constructing
+                a barcode reader plugin for the area detector project (A link to the areaDetector github page can be found
+                in the footer of this site). The plugin integrated the opencv and zbar libraries for image processing and
+                barcode detection respectively, and wrote detected barcode messages into Process Variables, or PVs. Database
+                integration is the next piece of the puzzle, and current work is focused on adding built in support for MySQL
+                and MongoDB databases, with more specialized solutions being added later. The flexibility of this solution,
+                however, lies in the fact that barcode/QR code information is stored in PVs, which can be accessed through
+                a variety of methods including through a shell script or a python program, meaning that regardless of the
+                database implementation in use at a particular beamline, even if the plugin itself doesn't natively support
+                it, intergating it should not be difficult.
+            </p>
+            <br style="clear:both" />
         </div>
-        <hr class="divider">
-        <img src="assets/RowersMeet.png" alt="Rowers Meet Homepage" />
-        <p>For my principles of database systems course at Stony Brook University, I worked as part of a small team to create
-            a dating website using HTML, CSS, Javascript, and Bootstrap for the front end portion, and Java and MySQL for the 
-            website backend. We used .jsp files and servlets to integrate the html with the output of the jdbc based SQL queries,
-            and we hosted the completed website on an Apache server. Source code for the project is available on my Github account.
-        </p>
-        <br style="clear: both;" />
-    </div>
     </a>
 
-    <a name="project4">
+    <a name="projectRowersMeet">
+        <div class="project">
+            <div class="project-heading">
+                <h3>Rowers Meet Dating Website
+                    <a class="short-icon" href="https://github.com/jwlodek/DatingApp">
+                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                        />
+                    </a>
+                </h3>
+            </div>
+            <hr class="divider">
+            <img src="assets/RowersMeet.png" alt="Rowers Meet Homepage" />
+            <p>For my principles of database systems course at Stony Brook University, I worked as part of a small team to create
+                a dating website using HTML, CSS, Javascript, and Bootstrap for the front end portion, and Java and MySQL
+                for the website backend. We used .jsp files and servlets to integrate the html with the output of the jdbc
+                based SQL queries, and we hosted the completed website on an Apache server. Source code for the project is
+                available on my Github account.
+            </p>
+            <br style="clear: both;" />
+        </div>
+    </a>
+
+    <a name="projectADCV">
         <div class="project">
             <div class="project-heading">
                 <h3>ADCompVision
                     <a class="short-icon" href="https://github.com/jwlodek/ADCompVision">
-                        <img src="assets/GitHub-Mark-64px.png" alt="Github"
-                            onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)" />
+                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                        />
                     </a>
                 </h3>
             </div>
             <hr class="divider" />
             <img src="assets/CompVisionPlugin.png" alt="AD Comp Vision" />
             <p>Using the experience I gained when writing the ADPluginBar reader and the 3D image stacking software, I began
-                constructing an implementation of core OpenCV Computer Vision functions for area detector in the form of a plugin.
-                Some currently added functionality is edge detection and centroid detection. The initial testing of the plugin involved 
-                computing the centroid of samples on a stand in order for automation to be able to align sample centroids. Centroid 
-                computation was performed by first cropping the image to a region of interest (this was done through the area detector
-                software itself, using the ROI plugin and passing the result to the ADCompVision plugin), then thresholding the image, 
-                and finally computing contours and their centroids using OpenCV. Source code for the entire plugin is available on Github.
+                constructing an implementation of core OpenCV Computer Vision functions for area detector in the form of
+                a plugin. Some currently added functionality is edge detection and centroid detection. The initial testing
+                of the plugin involved computing the centroid of samples on a stand in order for automation to be able to
+                align sample centroids. Centroid computation was performed by first cropping the image to a region of interest
+                (this was done through the area detector software itself, using the ROI plugin and passing the result to
+                the ADCompVision plugin), then thresholding the image, and finally computing contours and their centroids
+                using OpenCV. Source code for the entire plugin is available on Github.
             </p>
             <br style="clear: both;" />
-    </div>
-    </a>
-
-    <a name="project5">
-    <div class="project">
-        <div class="project-heading">
-            <h3>Other Projects
-                <a class="short-icon" href="https://github.com/jwlodek">
-                    <img src="assets/GitHub-Mark-64px.png" alt="Github"
-                        onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)" />
-                </a>
-            </h3>
         </div>
-        <hr class="divider" />
-        <img src="assets/OtherProjects.png" alt="Other Project Imgaes" />
-        <p>Many of the other projects I have worked on can be found on my github account. These include:
-            a Cryptogram encoder/decoder that I wrote in order to simplify completing my final project for 
-            AMS 303 Graph Theory, a program used to calculate the expected score of a particular card game, 
-            a python script for organizing area detector configuration files, and both this website and a resesign
-            of the Stony Brook rowing team website, a current in-progress project.
-
-        </p>
-        <br style="clear: both;" />
-    </div>
     </a>
 
-<!--Footer-->
-<footer class="page-footer font-small footer-local">
+    <a name="projectOther">
+        <div class="project">
+            <div class="project-heading">
+                <h3>Other Projects
+                    <a class="short-icon" href="https://github.com/jwlodek">
+                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                        />
+                    </a>
+                </h3>
+            </div>
+            <hr class="divider" />
+            <img src="assets/OtherProjects.png" alt="Other Project Imgaes" />
+            <p>Many of the other projects I have worked on can be found on my github account. These include: a Cryptogram encoder/decoder
+                that I wrote in order to simplify completing my final project for AMS 303 Graph Theory, a program used to
+                calculate the expected score of a particular card game, a python script for organizing area detector configuration
+                files, and both this website and a resesign of the Stony Brook rowing team website, a current in-progress
+                project.
+
+            </p>
+            <br style="clear: both;" />
+        </div>
+    </a>
+
+    <!--Footer-->
+    <footer class="page-footer font-small footer-local">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
                 <div class="col-md-7 footer-orgs-local">
                     <h5 class="font-weight-bold text-uppercase mt-6 mb-6">Some interesting websites:</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://www.highdefdigest.com"><u>High Def Digest: Blu-Ray and UltraHD reviews</u></a></li>
-                        <li><a href="https://github.com/areaDetector"><u>Area Detector on Github</u></a></li>
-                        <li><a href="http://www.stonybrookcrew.com"><u>The Stony Brook Rowing team website</u></a></li>
+                        <li>
+                            <a href="https://www.highdefdigest.com">
+                                <u>High Def Digest: Blu-Ray and UltraHD reviews</u>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/areaDetector">
+                                <u>Area Detector on Github</u>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.stonybrookcrew.com">
+                                <u>The Stony Brook Rowing team website</u>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-5 footer-social-local">
@@ -196,12 +246,12 @@
                         <li>
                             <div class=social-links>
                                 <a href="https://www.github.com/jwlodek">
-                                    <img class="social-media-local" src="assets/GitHub-Mark-Light-64px.png"
-                                        onmouseover="image_hover(this, mark)" onmouseout="image_hover(this, mark_light)"/>
+                                    <img class="social-media-local" src="assets/GitHub-Mark-Light-64px.png" onmouseover="image_hover(this, mark)" onmouseout="image_hover(this, mark_light)"
+                                    />
                                 </a>
                                 <a href="https://www.linkedin.com/in/jakub-wlodek-67b5a7107">
-                                    <img class="social-media-local" src="assets/In-White-66px-TM.png" 
-                                        onmouseover="image_hover(this, linkedin_logo_black)" onmouseout="image_hover(this, linkedin_logo)"/>
+                                    <img class="social-media-local" src="assets/In-White-66px-TM.png" onmouseover="image_hover(this, linkedin_logo_black)" onmouseout="image_hover(this, linkedin_logo)"
+                                    />
                                 </a>
                             </div>
                         </li>
@@ -209,8 +259,9 @@
                     <br style="clear: both;" />
                     <p class="footer-copy-local">Copyright(c): 2018 - Jakub Wlodek</p>
                 </div>
-            </div>            
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
