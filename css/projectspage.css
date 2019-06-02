@@ -4,10 +4,9 @@
 }
 
 .project-heading h3 {
-    font-family: Helvetica;
     text-align: left;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #000099;
 }
 
@@ -16,7 +15,7 @@
     padding-right: 5px;
     margin: 0;
     border: 0;
-    width: 64px;
+    width: 50px;
     height: auto;
 }
 
@@ -25,7 +24,7 @@
     padding-right: 5px;
     margin: 0;
     border: 0;
-    width: 64px;
+    width: 50px;
     height: auto;
     padding-top: 4px;
 }
@@ -33,7 +32,7 @@
 
 .pinned-project {
     background-color: #84c8f5;
-    width: 90%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -45,32 +44,25 @@
 }
 
 .pinned-project img {
-    width: 45%;
+    width: 60%;
     margin-left: 10px;
     height: auto;
     float: left;
     margin: 0;
     border: 0;
 }
-.pinned-project iframe{
-    width: 560px;
-    height: 315px;
-    margin-left: 10px;
-    float: left;
-}
 
 .pinned-project p {
     color: #000099;
-    width: 50%;
+    width: 37%;
     padding-left: 10px;
     float: right;
-    font-size: 20px;
-    font-family: Helvetica;
+
 }
 
 .project {
     background-color: #84c8f5;
-    width: 90%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -82,7 +74,7 @@
 }
 
 .project img {
-    width: 45%;
+    width: 60%;
     margin-left: 10px;
     height: auto;
     float: left;
@@ -90,38 +82,10 @@
     border: 0;
 }
 
-.pinned-project .video-container-local {
-    width: 45%;
-    margin-left: 10px;
-    height: auto;
-    float: left;
-    margin: 0;
-    border: 0;
-}
-
-.video-container-local {
-    position: relative;
-    padding-bottom: 25%;
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden;
-}
-
-.video-container-local iframe, 
-.video-container-local object,
-.video-container-local embed{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .project p {
     color: #000099;
-    width: 50%;
+    width: 37%;
     padding-left: 10px;
     float: right;
-    font-size: 20px;
-    font-family: Helvetica;
 }
