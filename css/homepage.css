@@ -1,10 +1,11 @@
 .home-entry-pinned {
-    width: 90%;
+    width: 40%;
     margin: auto;
     border: auto;
     border-radius: 25px;
     background-color: #84c8f5;
     margin-top: 100px;
+    margin-bottom: 60px;
     padding: 20px;
 }
 
@@ -18,11 +19,47 @@
     padding: 30px;
 }
 
+.wrap-around {
+    width: 40%;
+    float: left;
+    margin: 20px;
+}
+
+.text-section{
+    border-radius: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 0;
+    font-family: Helvetica;
+    text-align: left;
+    color: #000099;
+    
+}
+
+.text-section h3 {
+    font-family: Helvetica;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+
+}
+
+.text-section p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.project-list li {
+    padding-bottom: 10px;
+}
+
+
+/* -----------------------DEPRECATED---------------- */
 
 .image-entry {
     width: 47%;
     background-color: lightgray;
-    float: left;
+    float: right;
     border-radius: 25px;
     padding: 10px;
     margin-left: 1.5%;
@@ -86,30 +123,4 @@
     color: #000099;
     border: 0;
 
-}
-
-.text-section{
-    width: 45%;
-    border-radius: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border: 0;
-    float: left;
-}
-
-.text-section h3 {
-    font-family: Helvetica;
-    text-align: left;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000099;
-}
-
-.text-section p {
-    font-family: Helvetica;
-    text-align: left;
-    color: #000099;
-    margin: 0;
-    border: 0;
-    font-size: 20px;
 }
