@@ -1,13 +1,14 @@
 .home-entry-pinned {
-    width: 40%;
+    width: 50%;
     margin: auto;
     border: auto;
     border-radius: 25px;
-    background-color: #84c8f5;
-    margin-top: 100px;
+    /*background-color: #84c8f5;*/
+    background-color: #aab1bb;
+    margin-top: 30px;
     margin-bottom: 60px;
     padding: 20px;
-    color: #000099;
+    /*color: #000099;*/
 }
 
 .home-entry {
@@ -33,8 +34,7 @@
     border: 0;
     font-family: Helvetica;
     text-align: left;
-    color: #000099;
-    
+    color: #271b1b;
 }
 
 .text-section h3 {

@@ -22,14 +22,35 @@
 <body>
     <script>mobileRedirect();</script>
     <!--Header-->
-    <div class="headerwrapper-local">
-        <div>
-            <h1 class="header-local">Welcome to my Portfolio!</h1>
+    <div class = "img-overlay">
+        <div class = "top-crop"><img src="assets/Banner.jpg" /></div>
+        <div  class = "overlay-text">
+            <h1>Jakub Wlodek</h1>
+            <hr style="width: 30%; border-width: 0.2rem; border-color: white"/>
+            <h4>Programmer and Tinkerer</h4>
         </div>
     </div>
 
 
-    <!--Navigation Bar-->
+    <ul class="nav" style="display:flex; justify-content:center">
+        <li class="item"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li class="item">
+            <a href="projects.html">Projects</a>
+            <ul>
+                <li><a href="projects.html#project3DReconstruction">Focus Stack 3D Reconstruction</a></li>
+                <li><a href="projects.html#projectADUVC">ADUVC EPICS areaDetector driver</a></li>
+                <li><a href="projects.html#projectADBar">ADPluginBar EPICS Barcode Reader</a></li>
+                <li><a href="projects.html#projectRowersMeet">Rowers Meet Dating Website</a></li>
+                <li><a href="projects.html#projectADCV">ADCompVision Area Detector Plugin</a></li>
+                <li><a href="projects.html#projectOther">Other Projects</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="resume.html"></i>Resume</a></li>
+        <li class="item"><a href="contact.html"></i>Contact</a></li>
+    </ul>
+
+    <!--
+    <!--Navigation Bar
     <div class="navbar-local">
         <a href="index.html">Home</a>
         <div class="dropdown-local">
@@ -54,9 +75,9 @@
                 <a href="resume.html#resume">Resume</a>
             </div>
         </div>
-        <!--<a href="contact.html">Contact</a>-->
+        <!--<a href="contact.html">Contact</a>
     </div>
-
+    -->
     <div class="home-entry-pinned">
         <div class="text-section">
             <h3>About Me!</h3>
