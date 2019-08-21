@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-    <title>Jakub Wlodek Home</title>
+    <title>My Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/mainscripts.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
@@ -20,47 +20,91 @@
 <body>
 
     <!--Header-->
-    <div class="headerwrapper-local">
-        <div>
-            <h1 class="header-local">Some of my Projects</h1>
+    <div class = "img-overlay">
+        <div class = "top-crop"><img src="assets/Banner.png" /></div>
+        <div  class = "overlay-text">
+            <h1>Jakub Wlodek</h1>
+            <hr style="width: 30%; border-width: 0.2rem; border-color: white"/>
+            <h4>My Projects</h4>
         </div>
     </div>
 
-    <!--Navigation Bar-->
-    <div class="navbar-local">
-        <a href="index.html">Home</a>
-        <div class="dropdown-local">
-            <form action="projects.html">
-                <button type="submit" class="dropbtn-local">Projects</button>
-            </form>
-            <div class="dropdown-content-local">
-                <a href="projects.html#projectADCV">ADCompVision Area Detector Plugin</a>
-                <a href="projects.html#project3DReconstruction">Focus Stack 3D Reconstruction</a>
-                <a href="projects.html#projectADUVC">ADUVC EPICS areaDetector driver</a>
-                <a href="projects.html#projectADBar">ADPluginBar EPICS Barcode Reader</a>
-                <a href="projects.html#projectRowersMeet">Rowers Meet Dating Website</a>
-                <a href="projects.html#projectOther">Other Projects</a>
+<nav class="navbar navbar-expand-sm navbar-local" data-toggle="affix">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap navbar-local">
+            <div class="collapse navbar-collapse text-center navbar-local" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Projects
+                            </a>
+                            <div class="dropdown-menu dropdown-local" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="projects.html">Projects Home</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#csplit">csplit</a>
+                              <a class="dropdown-item" href="#ADCompVision">ADCompVision</a>
+                              <a class="dropdown-item" href="#Focus-Stacking">Focus Stacking</a>
+                              <a class="dropdown-item" href="#SAVJ-Canvassing">SAVJ-Canvassing</a>
+                              <a class="dropdown-item" href="#ADUVC">ADUVC</a>
+                              <a class="dropdown-item" href="#installSynApps">installSynApps</a>
+                              <a class="dropdown-item" href="#Through-The-Ages">Through The Ages</a>
+                              <a class="dropdown-item" href="#Rowers-Meet">Rowers Meet</a>
+                              <a class="dropdown-item" href="#Foldify">Foldify</a>
+                              <a class="dropdown-item" href="#ADPluginBar/Dmtx">ADPluginBar/Dmtx</a>
+                              <a class="dropdown-item" href="#Other">Other</a>
+                              <!--<div class="dropdown-divider"></div>-->
+                            </div>
+                          </li>
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="dropdown-local">
-            <form action="resume.html">
-                <button type="submit" class="dropbtn-local">Resume</button>
-            </form>
-            <div class="dropdown-content-local">
-                <a href="resume.html#downloads">Download links</a>
-                <a href="resume.html#resume">Resume</a>
-            </div>
-        </div>
-        <!--<a href="contact.html">Contact</a>-->
-    </div>
+    </nav>
 
     <!--Projects list-->
+    <a name="csplit">
+        <div class="project pinned-project">
+            <div class="project-heading">
+                <h3>csplit
+                    <a class="short-icon" href="https://jwlodek.github.io/csplit-docs/">
+                        <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
+                        />
+                    </a>
+                    <a class="short-icon" href="https://github.com/jwlodek/csplit">
+                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                        />
+                    </a>
+                </h3>
+            </div>
+            <hr class="divider" />
+            <img class="project-img" src="assets/csplitImg.png" alt="csplit" style="width:20%;"/>
+            <p style="width:75%;">In order to improve string manipulation in C (splitting in particular), I wrote a small single header C library that contains some useful
+                functions that allow for python-like string operations.</p>
+            <p style="width:75%;">An example of csplit's python like usage would passing an index
+                of negative one to a function in order to perform the function starting from the end of the string. Csplit provides functions for splitting on characters or
+                other strings, has support for performing these operations from the front or rear of the string, and adds support for other useful functions like strip(), startswith()
+                and endswith(). The primary data structure used by csplit is a doubly-linked list called a CSplitList, and is composed of CSplitFragments. Essentially, csplit abstracts
+                splitting C strings away replacing the archaic strtok, at the cost of some memory. I have used csplit in several other personal projects with success. It currently has 24
+                stars on Github.
+            </p>
+            <br style="clear: both;" />
+        </div>
+    </a>
     
-    <a name="projectADCV">
-            <div class="pinned-project">
+    <a name="ADCompVision">
+            <div class="project pinned-project">
                 <div class="project-heading">
                     <h3>ADCompVision
-                        <a class="short-icon" href="https://areadetector.github.io/master/ADCompVision/ADCompVision.html">
+                        <a class="short-icon" href="https://jwlodek.github.io/ADCompVision/">
                             <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
                             />
                         </a>
@@ -71,17 +115,19 @@
                     </h3>
                 </div>
                 <hr class="divider" />
-                <img src="assets/CompVisionPlugin.png" alt="AD Comp Vision" />
+                <img class="project-img" src="assets/CompVisionPlugin.png" alt="AD Comp Vision" />
                 <p>As a way to add comprehensive OpenCV functionality to the EPICS areaDetector project, I worked on writing a plugin
-                    that allows for implementing additional CV features while using the same, modular, EPICS backbone. The project relies
-                    on shared Input/Output parameters that can be used by whichever function is currently selected. The descriptions for these
-                    input and output parameters are updated in real time to the ones tied to whichever function is in use. In addition, the plugin
-                    provides image passthrough to allow for standard image output when the plugin is not in use. Currently, there are 10 OpenCV functions
+                    framework that allows for implementing a variety of OpenCV real-time image processing features while using the same, modular, EPICS backbone.</p>
+                    <p>The project allows for OpenCV functions to be called in real time on images recieved from any areaDetector camera driver,
+                        and for the processed images to be pushed to other areaDetector plugins. Currently, there are 10 OpenCV functions
                     implemented, including Canny and Laplacian edge detection, Centroid identification, object identification, real-time image subtraction
                     and masking, sharpening, and distance computation. In addition, thanks to the plugin's modular design,
                     new functionality requires only one additional function to be written,
-                    with an already existing template in place if a single new use case is desired. The plugin is also fully interoperable with the remaining
-                    suite of areaDetector plugins, and is thus simple to integrate into any workflow. ADCompVision has been integrated into the main
+                    with an already existing template in place if a single new use case is desired. </p>
+                    <p>
+                    ADCompVision has been used in several projects, including as a way to perform real time image subtraction for attaining dual threshold
+                    images from the X-Spectrum Lambda detector, and as a way to identify sample centroids for pre-experimental alignment (see image). 
+                    ADCompVision is integrated into the main
                     areaDetector repository, and thus sources can be seen on <a href = "https://github.com/areaDetector/ADCompVision">Github</a>.
                 </p>
                 <br style="clear: both;" />
@@ -89,7 +135,7 @@
         </a>
 
 
-    <a name="project3DReconstruction">
+    <a name="Focus-Stacking">
         <div class="project">
             <div class="project-heading">
                 <h3>Focus Stacked 3D Reconstruction
@@ -103,16 +149,18 @@
                 </h3>
             </div>
             <hr class="divider">
-            <img src="assets/FocusStack.png" alt = "Focus Stack" />
+            <img class="project-img" src="assets/FocusStack.png" alt = "Focus Stack" />
             <p>During my internship at Brookhaven National Laboratory, I constructed software that used focus stacking as a
                 way of collecting high quality images with a shallow depth of field fixed microscope, as well as recreating
-                three dimensional depth data. The images to the left show some of my results. The two sets of images were the result of collecting
+                three dimensional depth data.</p>
+                <p>The images to the left show some of my results. The two sets of images were the result of collecting
                 18 images of a mineral, and 38 images of a horse fly with a 5x microscope at a shallow depth of focus. The images were then merged into
-                one, to create a single in-focus image. This can be seen with the two included images of the fly, with the top of the two
-                being a raw image from the stack that exhibits large out-of-focus regions, and the lower image shows the results attained after merging the
-                stack of 38 into a single image. Finally, using OpenGL, the merged image, along with depth information
+                one, to create a single in-focus image. The results can be seen to the left with the two included images of the fly. The top of the two
+                images was taken directly from the stack and exhibits large out-of-focus regions, while the lower image shows the results attained after merging the
+                stack of 38 images into a single output. Finally, using OpenGL, the merged image, along with depth information
                 that was collected simultaneously, was used to generate a 3D model of the sample. An example of a generated depth map
-                for thge mineral is also shown on the left. This project has resulted in three co-authored
+                for the mineral is also shown on the left.</p>
+                <p>This project has resulted in three co-authored
                 publications, one of which, "Achieving 3D imaging through focus stacking," is linked above. 
                 Additionally, reconstructed model 3D videos have been uploaded to the youtube channel linked above.
             </p>
@@ -120,11 +168,33 @@
         </div>
     </a>
 
+    <a name="SAVJ-Canvassing">
+            <div class="project">
+                <div class="project-heading">
+                    <h3>SAVJ-Canvassing</h3>
+                </div>
+                <hr class="divider">
+                <img class="project-img" src="assets/SAVJ-Canvassing.png" alt = "SAVJ-Canvassing" />
+                <p>For the final project for my Software Engineering course, I was tasked with building a web app for political canvassing. Working with three other students, we discussed, designed, and finally developed the app with a Java and MySQL database back end, and an
+                    html, css, and jsp front end. Some other technologies used were the Google maps API, Github for centralized version control,
+                    and Apache Tomcat for running the app on a server.
+                </p>
+                    <p>SAVJ-Canvassing allows for creating campaigns with a given set of target
+                        canvassing addresses, which are then algorithmically assigned to an available Canvasser based on his or her schedule, workload, and 
+                        proximity. The Google Maps API is called via javascript for navigation to each destination by Canvassers, and a custom implementation of a Heuristic
+                        solution to the travelling salesman problem is used to determine which order is best for visiting all locations.
+                    
+                    <br /><br/>Source code for SAVJ-Canvassing is not publically available. If you wish to view or discuss it, please contact me via the form on the homepage of
+                        this site.
+                </p>
+                <br style="clear: both;" />
+            </div>
+        </a>
 
-    <a name="projectADUVC">
+    <a name="ADUVC">
         <div class="project">
             <div class="project-heading">
-                <h3>ADUVC EPICS areaDetector driver for USB Video Class Devices
+                <h3>ADUVC
                     <a class="short-icon" href="https://jwlodek.github.io/ADUVC">
                         <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
                         />
@@ -136,23 +206,141 @@
                 </h3>
             </div>
             <hr class="divider" />
-            <img src="assets/ADUVCBase.png" alt="UVC demo image" />
-            <p>In order to gain support for USB Video Class (UVC) devices for the EPICS area detector software suite, I developed a custom driver
-                using the libusb and libuvc libraries. The current driver is available in beta version R0-1. Most of the core camera functions have
-                already been implemented, including image streaming and acquisition, image size and framerate control, and interoperability with
-                area detector plugins ranging from file saving to image processing. UVC cameras range from cheap consumer webcams to high quality 
-                industrial cameras, giving them a wide breath of use cases. Some primary use cases include test benches for further plugin development
+            <img class="project-img" src="assets/ADUVCBase.png" alt="UVC demo image" />
+            <p>In order to gain support for USB Video Class (UVC) webcam devices for the EPICS area detector software suite, I developed a custom driver
+                using the libusb and libuvc libraries. The driver implements most camera functionality including Exposure Time, Saturation, and Framerate, and
+                supports both 8-bit and 16-bit output modes.</p>
+            <p>The current driver is available in version R1-2. It has been deployed on 3 beamlines at the National Synchrotron Light Source II (NSLS2),
+                with the 17BM beamline currently having 7 devices in production as their main acquisition hardware, along with several more deployments 
+                planned. ADUVC has been tested with all areaDetector plugins, and has been used in tandem with several to perform real time data analysis
+                on budget hardware.</p>
+            <p>UVC cameras range from cheap consumer webcams to high quality 
+                industrial cameras, giving them a wide breath of use cases. Some current use cases include test benches for further plugin development
                 (because of the simplicity of their setup), monitoring (because of their inexpensiveness), and use in small form factors (they are 
-                available in a variety of sizes and shapes including pencil cameras).
+                available in a variety of sizes and shapes including pencil cameras). The average deployed ADUVC camera at NSLS2 costs under 100 $, while a
+                comparable industrial GigE device (though obviously providing more features) could cost upwards of 700 or 800 $, often more.
             </p>
             <br style="clear:both" />
         </div>
     </a>
 
-    <a name="projectADBar">
+    <a name="installSynApps">
+            <div class="project">
+                <div class="project-heading">
+                    <h3>installSynApps / Docker-Builder
+                        <a class="short-icon" href="https://epicsNSLS2-deploy.github.io/installSynApps">
+                            <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
+                            />
+                        </a>
+                        <a class="short-icon" href="https://github.com/jwlodek/installSynApps">
+                            <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                            />
+                        </a>
+                    </h3>
+                </div>
+                <hr class="divider" />
+                <img class="project-img" src="assets/installSynApps.png" alt="installSynApps" />
+                <p>As part of the centralized areaDetector build project, I wrote a python module called installSynApps that is responsible for cloning, building, and
+                    packaging EPICS, synApps, and areaDetector with one command. In addition, using installSynApps, Dockerfiles were created for automatically 
+                    creating release packages of EPICS and areaDetector on various architectures and linux distributions.
+                </p>
+                <p>installSynApps is written as an MVC (Model, View, Controller) application, with strict divisions between the data model, the driver code, and the user interface. As a result,
+                    using the same back end code base, installSynApps supports a GUI version along with a CLI version that can be fully automated for scripting use. The GUI version
+                    allows users to fully control their build, editing all version numbers and included modules.
+                </p>
+                <p>Once installSynApps could build and package EPICS and areaDetector, the goal of the project shifted to fully automate the process, and for this Docker containers were
+                    utilized. Containers for each supported OS, architecture, and linux distribution are generated, and then installSynApps is run through a script inside the 
+                    Docker container. This process will eventually be moved onto a CI server that will automatically generate release packages when new versions of core software modules are released.
+                </p>
+                <br style="clear:both" />
+            </div>
+        </a>
+        <a name="Through-The-Ages">
+                <div class="project">
+                    <div class="project-heading">
+                        <h3>Through the Ages
+                            <a class="short-icon" href="https://through-the-ages-d17de.firebaseapp.com/benchmark3">
+                                <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
+                                />
+                            </a>
+                            <a class="short-icon" href="https://github.com/jwlodek/Through-The-Ages">
+                                <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                                />
+                            </a>
+                        </h3>
+                    </div>
+                    <hr class="divider" />
+                    <img class="project-img" src="assets/Through-The-Ages.gif" alt="Through the ages GIF" />
+                    <p>Working with two of my peers, I created a JavaScript based web game based on the Phaser WebGL game engine, with all original artwork.
+                    </p>
+                    <p>Through the Ages is a game inspired by one of Rare's early titles - Jetpac. The player must collect items that are critical to the character's (Gareth's) survival.
+                        The player can carry one item at a time, and must carry it back to his base, avoiding enemies. Once all items are collected, the player advances to the next
+                        level, or age.
+                    </p>
+                    <p>Through the Ages was written with a game design that allowed large amounts of code reuse between levels. In addition, enemy AI is state based, and gains access
+                        to a greater amount of states as the game progresses, making subsequent levels more challenging. Through the Ages was a finalist at the 2019 Stony Brook 
+                        University game programming competition. You may play the game yourself by clicking on the link above, or see the source code on Github.
+                    </p>
+                    <br style="clear:both" />
+                </div>
+            </a>
+            <a name="Rowers-Meet">
+                    <div class="project">
+                        <div class="project-heading">
+                            <h3>Rowers Meet Dating Website
+                                <a class="short-icon" href="https://github.com/jwlodek/DatingApp">
+                                    <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                                    />
+                                </a>
+                            </h3>
+                        </div>
+                        <hr class="divider">
+                        <img class="project-img" src="assets/RowersMeet.png" alt="Rowers Meet Homepage" />
+                        <p>For my principles of database systems course at Stony Brook University, I worked as part of a small team to create
+                            a dating website using HTML, CSS, Javascript, and Bootstrap for the front end, and Java and MySQL
+                            for the website backend. We used .jsp files and servlets to integrate the html with the output of the jdbc
+                            based SQL queries, and we hosted the completed website on an Apache server.</p>
+                        <p>Rower's Meet required handling profiles, location based data, and the arrangment dates between profiles. In addition,
+                            it was required that similar profies be "matched", so that they may initiate a date. The source code for Rower's Meet
+                            is available on Github.
+                        </p>
+                        <br style="clear: both;" />
+                    </div>
+                </a>
+                <a name="Foldify">
+                        <div class="project">
+                            <div class="project-heading">
+                                <h3>Foldify
+                                    <!--<a class="short-icon" href="https://github.com/jwlodek/Foldify">
+                                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                                        />
+                                    </a>-->
+                                </h3>
+                            </div>
+                            <hr class="divider">
+                            <img class="project-img" src="assets/Foldify.png" alt="Foldify Main" />
+                            <p>A work in progress C#/WPF application that will allow easy file and directoiry management.</p>
+                            <p>Supported Foldify use cases will include auto-sorting of directories into correct folders (i.e. images into
+                                Pictures/ folder etc.), sorting images based on date (useful for pulling images from a cell phone or camera), and user generated
+                                templates (in the form of custom xml files) for building file structures as well as organizing them.
+                            </p>
+                            <p>I started building Foldify to both automate my file organization - I like to keep my files very organized -
+                                as well as to generate directory structures based on templates. For example, I am able to link Foldify to my
+                                University account, and Foldify will auto-generate folders for each of my courses, with homework/notes/etc.
+                                directories in each.
+                            </p>
+                            <p>
+                                Foldify is currently a work in progress, so its source code is not yet available. If you would wish to view/discuss the source
+                                code, please contact me using the form on the home page.
+                            </p>
+                            <br style="clear: both;" />
+                        </div>
+                    </a>
+
+    <a name="ADPluginBarDmtx">
         <div class="project">
             <div class="project-heading">
-                <h3>ADPluginBar EPICS Barcode reader plugin
+                <h3>ADPluginBar / Dmtx
                     <a class="short-icon" href="https://jwlodek.github.io/ADPluginBar">
                         <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
                         />
@@ -164,45 +352,29 @@
                 </h3>
             </div>
             <hr class="divider" />
-            <img src="assets/Barcodemain.png" alt="Barcode main screen" />
+            <img class="project-img" src="assets/Barcodemain.png" alt="Barcode main screen" />
             <p>As a way to simplify sample managment at National Synchrotron Light Source II beamlines, I worked on constructing
-                a barcode reader plugin for the area detector project (A link to the areaDetector github page can be found
-                in the footer of this site). The plugin integrated the opencv and zbar libraries for image processing and
-                barcode detection respectively, and wrote detected barcode messages into Process Variables, or PVs. Database
-                integration is the next piece of the puzzle, and current work is focused on adding built in support for MySQL
-                and MongoDB databases, with more specialized solutions being added later. The flexibility of this solution,
-                however, lies in the fact that barcode/QR code information is stored in PVs, which can be accessed through
+                a barcode reader plugin for the area detector project.</p>
+                <p>ADPluginBar uses the opencv and zbar libraries for image processing and
+                barcode detection respectively, and writes detected barcode messages into Process Variables, or PVs. Database
+                integration is the next step, and current work is focused on adding built in support for MySQL
+                and MongoDB databases, with more specialized solutions being added later. ADPluginDmtx is an extension of ADPluginBar,
+            and adds bindings to the libdmtx library, and data matrix barcode decode support.</p>
+                <p>The flexibility of this solution,
+                however, lies in the fact that barcode/QR code information is stored in EPICS PVs, which can be accessed through
                 a variety of methods including through a shell script or a python program, meaning that regardless of the
                 database implementation in use at a particular beamline, even if the plugin itself doesn't natively support
-                it, intergating it should not be difficult.
+                it, integrating it should not be difficult.</p>
+                <p>ADPluginBar and ADPluginDmtx are being tested for production use on several NSLS2 beamlines, and will likely
+                    be used primarily for robotic automation of sample mangement.
             </p>
             <br style="clear:both" />
         </div>
     </a>
 
-    <a name="projectRowersMeet">
-        <div class="project">
-            <div class="project-heading">
-                <h3>Rowers Meet Dating Website
-                    <a class="short-icon" href="https://github.com/jwlodek/DatingApp">
-                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
-                        />
-                    </a>
-                </h3>
-            </div>
-            <hr class="divider">
-            <img src="assets/RowersMeet.png" alt="Rowers Meet Homepage" />
-            <p>For my principles of database systems course at Stony Brook University, I worked as part of a small team to create
-                a dating website using HTML, CSS, Javascript, and Bootstrap for the front end portion, and Java and MySQL
-                for the website backend. We used .jsp files and servlets to integrate the html with the output of the jdbc
-                based SQL queries, and we hosted the completed website on an Apache server. Source code for the project is
-                available on my Github account.
-            </p>
-            <br style="clear: both;" />
-        </div>
-    </a>
 
-    <a name="projectOther">
+
+    <a name="Other">
         <div class="project">
             <div class="project-heading">
                 <h3>Other Projects
@@ -214,10 +386,11 @@
             </div>
             <hr class="divider" />
             <img src="assets/OtherProjects.png" alt="Other Project Imgaes" />
-            <p>Many of the other projects I have worked on can be found on my github account. These include: a Cryptogram encoder/decoder
-                that I wrote in order to simplify completing my final project for AMS 303 Graph Theory, a program used to
-                calculate the expected score of a particular card game, a python script for organizing area detector configuration
-                files, and both this website and a resesign of the Stony Brook rowing team website, a current in-progress
+            <p>Many of the other projects I have worked on can be found on my github account. These include: libCGeo - a WIP pure C library for
+                computational geometry, a Cryptogram encoder/decoder
+                that I wrote in order to simplify completing my final project for my Graph Theory course, a program used to
+                calculate the expected score of a particular card game, a python module for adding command line loading animations
+                to your scripts, and both this website and a resesign of the Stony Brook rowing team website, a current in-progress
                 project.
 
             </p>
@@ -271,6 +444,12 @@
             </div>
         </div>
     </footer>
+
+        <!-- Bootstrap Javascript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

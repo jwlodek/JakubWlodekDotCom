@@ -1,7 +1,6 @@
 /*
  * Main stylesheet for my personal webpage.
  *
- *
  */
 
 /* styling for the body/background of page */
@@ -22,7 +21,7 @@ body {
 
 .top-crop img {
     width: 100%;
-    margin-top: -20%;
+    margin-top: -23%;
     margin-bottom: 0;
     padding: 0;
 }
@@ -45,64 +44,59 @@ body {
     width: 60%; /* Set the width of the positioned div */
 }
 
-  
-  ul {
-    background: #271b1b;
-      list-style: none;
-      margin: 0;
-      padding-left: 0;
-  }
 
-  li a {
-      color: white;
-  }
-  
-  ul li {
-      color: white;
+.navbar-local {
     background: #271b1b;
-      display: block;
-      float: left;
-      padding: 1rem;
-      position: relative;
-      width: 10%;
-  }
-  
-  ul li:hover {
-      background: white;
-      color: #271b1b;
-      cursor: pointer;
-  }
-  
-  ul li ul {
-      background: #271b1b;
-    visibility: hidden;
-    opacity: 0;
-    min-width: 10rem;
-      position: absolute;
-    margin-top: 1rem;
-      left: 0;
-    display: none;
-  }
-  
-  ul li:hover > ul,
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
-  
-  ul li ul li {
-      clear: both;
-    width: 100%;
-  }
+}
 
+.navbar-local li {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 17rem;
+}
+
+.navbar-local li:hover {
+    background: #706869;
+    border-radius: 3px;
+}
+
+.navbar-local a {
+    color: white;
+    font-family: Helvetica;
+}
+
+.dropdown-local {
+    background: #706869;
+    width: 20rem;
+}
+
+.form-btn-local{
+    background: #2d343f;
+    width: 50%;
+    float: right;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.form-btn-local:hover {
+    background:white;
+    color: black;
+    cursor: pointer;
+}
+
+.form-text-local {
+    float: left;
+}
 
 /* footer at the bottom of each page */
 .footer-local {
     margin-top: 50px;
     padding-top: 20px;
     /* padding-bottom: 10px; */
-    background-color: #000099;
+    background-color: #271b1b;
     background-repeat: repeat;
     color: white;
     
@@ -136,11 +130,11 @@ body {
 .divider {
     margin-bottom: 30px;
     height: 2px;
-    border-color: #000099
+    border-color: #271b1b;
 }
 
 .divider-short {
     margin-bottom: 5px;
     height: 2px;
-    border-color: #000099;
+    border-color: #271b1b;
 }

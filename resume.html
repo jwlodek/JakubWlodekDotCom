@@ -20,43 +20,60 @@
 <body>
 
     <!--Header-->
-    <div class="headerwrapper-local">
-        <div>
-            <h1 class="header-local">My Resume/CV</h1>
-        </div>
-    </div>
-
-    <!--Navigation bar-->
-    <div class="navbar-local">
-        <a href="index.html">Home</a>
-        <div class="dropdown-local">
-            <form action="projects.html">
-                <button type="submit" class="dropbtn-local">Projects</button>
-            </form>
-            <div class="dropdown-content-local">
-                <a href="projects.html#project3DReconstruction">Focus Stack 3D Reconstruction</a>
-                <a href="projects.html#projectADUVC">ADUVC EPICS areaDetector driver</a>
-                <a href="projects.html#projectADBar">ADPluginBar EPICS Barcode Reader</a>
-                <a href="projects.html#projectRowersMeet">Rowers Meet Dating Website</a>
-                <a href="projects.html#projectADCV">ADCompVision Area Detector Plugin</a>
-                <a href="projects.html#projectOther">Other Projects</a>
+    <div class = "img-overlay">
+            <div class = "top-crop"><img src="assets/Banner.png" /></div>
+            <div  class = "overlay-text">
+                <h1>Jakub Wlodek</h1>
+                <hr style="width: 30%; border-width: 0.2rem; border-color: white"/>
+                <h4>Programmer and Tinkerer</h4>
             </div>
         </div>
-        <div class="dropdown-local">
-            <form action="resume.html">
-                <button type="submit" class="dropbtn-local">Resume</button>
-            </form>
-            <div class="dropdown-content-local">
-                <a href="resume.html#downloads">Download links</a>
-                <a href="resume.html#resume">Resume</a>
+    
+        <nav class="navbar navbar-expand-sm navbar-local" data-toggle="affix">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap navbar-local">
+                <div class="collapse navbar-collapse text-center navbar-local" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Projects
+                                </a>
+                                <div class="dropdown-menu dropdown-local" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="projects.html">Projects Home</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="projects.html#csplit">csplit</a>
+                                  <a class="dropdown-item" href="projects.html#ADCompVision">ADCompVision</a>
+                                  <a class="dropdown-item" href="projects.html#Focus-Stacking">Focus Stacking</a>
+                                  <a class="dropdown-item" href="projects.html#SAVJ-Canvassing">SAVJ-Canvassing</a>
+                                  <a class="dropdown-item" href="projects.html#ADUVC">ADUVC</a>
+                                  <a class="dropdown-item" href="projects.html#installSynApps">installSynApps</a>
+                                  <a class="dropdown-item" href="projects.html#Through-The-Ages">Through The Ages</a>
+                                  <a class="dropdown-item" href="projects.html#Rowers-Meet">Rowers Meet</a>
+                                  <a class="dropdown-item" href="projects.html#Foldify">Foldify</a>
+                                  <a class="dropdown-item" href="projects.html#ADPluginBar/Dmtx">ADPluginBar/Dmtx</a>
+                                  <a class="dropdown-item" href="projects.html#Other">Other</a>
+                                  <!--<div class="dropdown-divider"></div>-->
+                                </div>
+                              </li>
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                    -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!--<a href="contact.html">Contact</a>-->
-    </div>
+        </nav>
+    
 
     <a name="downloads">
         <div class="link-section">
-            <h3>Download and View Links:</h3>
+            <h3>Download and View Links</h3>
             <hr class="divider" />
             <div class="link-element">
                 <h3>Resume/CV</h3>
@@ -95,7 +112,7 @@
 
     <a name="resume">
         <div class="resume-section">
-            <h3>My Resume:</h3>
+            <h3>My Resume</h3>
             <hr class="divider-short" />
             <embed class="resume-section-pdf" src="docs/Jakub_Wlodek_Resume.pdf" type="application/pdf">
         </div>
@@ -147,6 +164,13 @@
             </div>
         </div>
     </footer>
+
+    
+        <!-- Bootstrap Javascript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

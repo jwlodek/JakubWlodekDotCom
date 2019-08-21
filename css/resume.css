@@ -1,7 +1,7 @@
 .link-section {
-    background-color: #84c8f5;
+    background-color: #98b5ce;
     width: 90%;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 20px;
@@ -17,13 +17,13 @@
     font-size: 24px;
     font-weight: bold;
     padding-top: 15px;
-    color: #000099;
+    color: #271b1b;
 }
 
 .link-element{
     vertical-align: top;
     display: inline-block;
-    color: #000099;
+    color: #271b1b;
     font-size: 20px;
     font-family: Helvetica;
     font-weight: normal;
@@ -32,7 +32,7 @@
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
-    border-color: #000099;
+    border-color: #271b1b;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -70,7 +70,8 @@
 
 
 .resume-section {
-    background-color: #84c8f5;
+    text-align: left;
+    background-color: #98b5ce;
     width: 90%;
     margin-top: 40px;
     margin-left: auto;
@@ -85,9 +86,8 @@
 .resume-section h3 {
     font-size: 24px;
     font-weight: bold;
-    color: #000099;
-    font-family: Helvetica;
     padding-top: 15px;
+    color: #271b1b;
 }
 
 .resume-section-pdf {
