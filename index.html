@@ -22,142 +22,144 @@
 <body>
     <script>mobileRedirect();</script>
     <!--Header-->
-    <div class="headerwrapper-local">
-        <div>
-            <h1 class="header-local">Welcome to my Portfolio!</h1>
+    <div class = "img-overlay">
+        <div class = "top-crop"><img src="assets/Banner.png" /></div>
+        <div  class = "overlay-text">
+            <h1>Jakub Wlodek</h1>
+            <hr style="width: 30%; border-width: 0.2rem; border-color: white"/>
+            <h4>Programmer and Tinkerer</h4>
         </div>
     </div>
 
-
-    <!--Navigation Bar-->
-    <div class="navbar-local">
-        <a href="index.html">Home</a>
-        <div class="dropdown-local">
-            <form action="projects.html">
-                <button type="submit" class="dropbtn-local">Projects</button>
-            </form>
-            <div class="dropdown-content-local">
-                <a href="projects.html#project3DReconstruction">Focus Stack 3D Reconstruction</a>
-                <a href="projects.html#projectADUVC">ADUVC EPICS areaDetector driver</a>
-                <a href="projects.html#projectADBar">ADPluginBar EPICS Barcode Reader</a>
-                <a href="projects.html#projectRowersMeet">Rowers Meet Dating Website</a>
-                <a href="projects.html#projectADCV">ADCompVision Area Detector Plugin</a>
-                <a href="projects.html#projectOther">Other Projects</a>
+    <nav class="navbar navbar-expand-sm navbar-local" data-toggle="affix">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap navbar-local">
+            <div class="collapse navbar-collapse text-center navbar-local" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Projects
+                            </a>
+                            <div class="dropdown-menu dropdown-local" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="projects.html">Projects Home</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="projects.html#csplit">csplit</a>
+                              <a class="dropdown-item" href="projects.html#ADCompVision">ADCompVision</a>
+                              <a class="dropdown-item" href="projects.html#Focus-Stacking">Focus Stacking</a>
+                              <a class="dropdown-item" href="projects.html#SAVJ-Canvassing">SAVJ-Canvassing</a>
+                              <a class="dropdown-item" href="projects.html#ADUVC">ADUVC</a>
+                              <a class="dropdown-item" href="projects.html#installSynApps">installSynApps</a>
+                              <a class="dropdown-item" href="projects.html#Through-The-Ages">Through The Ages</a>
+                              <a class="dropdown-item" href="projects.html#Rowers-Meet">Rowers Meet</a>
+                              <a class="dropdown-item" href="projects.html#Foldify">Foldify</a>
+                              <a class="dropdown-item" href="projects.html#ADPluginBar/Dmtx">ADPluginBar/Dmtx</a>
+                              <a class="dropdown-item" href="projects.html#Other">Other</a>
+                              <!--<div class="dropdown-divider"></div>-->
+                            </div>
+                          </li>
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="dropdown-local">
-            <form action="resume.html">
-                <button type="submit" class="dropbtn-local">Resume</button>
-            </form>
-            <div class="dropdown-content-local">
-                <a href="resume.html#downloads">Download links</a>
-                <a href="resume.html#resume">Resume</a>
-            </div>
-        </div>
-        <!--<a href="contact.html">Contact</a>-->
-    </div>
+    </nav>
 
-    <div class="home-entry-pinned">
+    <div class="home-entry">
         <div class="text-section">
             <h3>About Me!</h3>
             <hr class="divider">
             <img class="wrap-around" src="assets/HomePage2.jpg" alt="temp" />
             <p> Welcome to my website! My name is Jakub Wlodek, and I am a Graduate student for Computer Science at
-                Stony Brook University. This year, I graduated with a CS and Applied Math major and U.S. history minor, 
-                and I chose to continue with graduate studies to finish my Master's degree in one year. I work at Brookhaven National Laboratory as a junior
-                engineer for the controls group at the National Synchrotron Light Source II. My work primarily revolves around
-                writing Computer Vision based tools for scientists, along with developing new plugins and detector drivers
-                for the open source area detector project. I am also focused on imporving the deployment of control software through
-                deployment systems and scripting. If you would like to learn more about these projects, make sure
-                to visit the "Projects" page, and visit github for source code. Outside of work and school, I have a passion
+                Stony Brook University.</p> 
+            <p>This year, I graduated with a CS and Applied Math major and U.S. history minor, 
+                and I chose to continue with graduate studies to finish my Master's degree in one year. I currently work at Brookhaven National Laboratory as a junior
+                engineer for the controls group at the National Synchrotron Light Source II.</p>
+            <p>My work primarily revolves around contributing Computer Vision based tools
+                and drivers to the open source areaDetector project many of which are at use in production  on NSLS2 beamlines. The ADUVC areaDetector driver I developed for USB Video Class
+                cameras has been deployed on three beamlines, and provides scientists a cost-effective solution for monitoring cameras. The 17BM beamline at NSLS2 currently
+                uses ADUVC based cameras as their primary acquisition hardware, with 7 currently deployed.</p>
+            <p>The ADCompVision plugin I wrote that integrates real time OpenCV image processing for all areaDetector supported cameras has been deployed on several beamlines, and has
+                been used for robotic alignment, distance measurement, and edge detection. One other application for ADCompVision was to enable a dual threshold feature for a specific X-Ray detector that required
+                consecutive images from the camera to be subtracted in real time, with one representing the upper threshold, and one the lower threshold.
+                </p>
+            <p>In addition to working on areaDetector, I am also focused on improving the deployment of control software through
+                deployment systems and scripting. This work primarily involves some custom build scripting along with utilizing Docker containers for building accross
+                all platforms. </p>
+            <p>If you would like to learn more about these projects, make sure
+                to visit the <a href="projects.html">Projects</a> page, and visit github for source code. Outside of work and school, I have a passion
                 for all things technological, and I also greatly enjoy spending time outside or on the water. In fact, I
                 even row on the Stony Brook University Crew team.</p>
         </div>
 
-        <!--
-        <div class="image-w-caption">
-            <img src="assets/HomePage2.jpg" alt="temp" />
-            <p>I also enjoy travelling, and have visited many countries in Europe, including Poland (where my family is from),
-                Hungary, France, Germany, and Slovakia.</p>
-        </div>
-        -->
         <br style="clear: both;" />
 
         <div class = "text-section">
             <h3>Projects</h3>
             <hr class = "divider">
-            <p>A more expansive and detailed list of my projects can be found under the "Projects" tab.</p>
-            <br>
+            <p>More details regarding each of these projects can be found under the "Projects" tab, or by clicking a link below.</p>
             <ul class="project-list">
-                <li><strong><a href = "https://github.com/jwlodek/Focus-Stacking">Focus-Stacking</a></strong> - A program that uses OpenCV and OpenGL to perform focus stacking and 3D reconstruction.</li>
-                <li><strong><a href = "https://github.com/jwlodek/Foldify">Foldify</a></strong> - An in-progress C# WPF desktop app for file management and organization.</li>
-                <li><strong><a href = "https://github.com/areaDetector/ADCompVision">ADCompVision</a></strong> - A computer vision plugin for the areaDetector project.</li>
-                <li><strong><a href = "https://github.com/areaDetector/ADUVC">ADUVC</a></strong> - An areaDetecor driver for USB Video Class devices.</li>
-                <li><strong><a href = "https://github.com/jwlodek/installSynApps">installSynApps</a></strong> - A collection of python and shell scripts that allow for automatic configuration and compilation of EPICS and areaDetector.</li>
-                <li><strong><a href = "https://github.com/jwlodek/libCGeo">libCGeo</a></strong> - An in-progress C library for computational geometry.</li>
-                <li><strong><a href = "https://github.com/jwlodek/Through-The-Ages">Through-The-Ages</a></strong> - A web based game written in javascript with the help of the phaser game engine.</li>
+                <li><strong><a href="projects.html#csplit">csplit</a></strong> - A single header C library to easily handle splitting and processing strings.</li>
+                <li><strong><a href="projects.html#ADCompVision">ADCompVision</a></strong> - A C++ real-time OpenCV based computer vision plugin for the areaDetector project.</li>
+                <li><strong><a href="projects.html#Focus-Stacking">Focus Stacking</a></strong> - A program that uses OpenCV and OpenGL to perform focus stacking and 3D reconstruction.</li>
+                <li><strong><a href="projects.html#SAVJ-Canvassing">SAVJ-Canvassing</a></strong> - A Java and MySQL backed web app for political canvassing.</li>
+                <li><strong><a href="projects.html#ADUVC">ADUVC</a></strong> - A C and C++ areaDetecor driver that adds support for USB Video Class (webcam) devices to EPICS.</li>
+                <li><strong><a href="projects.html#installSynApps">installSynApps</a></strong> - A python module and Dockerfiles that allow for automatic configuration, compilation, and packaging of EPICS and areaDetector.</li>
+                <li><strong><a href="projects.html#Through-The-Ages">Through The Ages</a></strong> - A web based game written in javascript with the help of the phaser game engine.</li>
+                <li><strong><a href="projects.html#Rowers-Meet">Rowers Meet</a></strong> - A web app built with Java and MySQL that creates a dating website for college Rowers</li>
+                <li><strong><a href="projects.html#Foldify">Foldify</a></strong> - An in-progress C# WPF desktop app for file management and organization.</li>
+                <li><strong><a href="projects.html#ADPluginBar/Dmtx">ADPluginBar/Dmtx</a></strong> - A QR/Bar/Data Matrix code reader for EPICS areaDetector supported cameras.</li>
+                <li><strong><a href="projects.html#Other">Other</a></strong> - My many other projects</li>
             </ul>
         </div>
 
         <div class="text-section">
             <h3>Contact Me</h3>
             <hr class= "divider" >
-
-            <ul class = "project-list">
-                <li><strong>Email</strong> - j17wlodek at gmail dot com.</li>
-            </ul>
-            <p>Feel free to contact me by email, it is my prefferred communication method.
+            <p>Feel free to contact me by email by filling out the form below, it is my prefferred communication method.
                 If you would like to discuss one of my projects,
                 feel free to open an issue or pull request on its github repository.
                 You can also message me through linkedin, as I check my notifications regularly.
                 I look forward to hearing from you!
             </p>
         </div>
+        <br/>
+        <div class="container contact-form">
+                <form action="https://formspree.io/jwlodek.dev@gmail.com" method="POST">
+                   <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                            </div>
+                            <div class = "form-group">
+                                <p class="form-text-local">Contact form powered by <a href="https://formspree.io/">formspree.io</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btnSubmit" class="btnContact form-btn-local" value="Send Message" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+        </div>  
     </div>
-    <!--
-    <div class="home-entry">
-        <div class="image-w-caption">
-            <img src="assets/thumb-1920-82317.jpg" alt="temp" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ducimus commodi sint cupiditate? Perspiciatis tenetur quos nostrum tempore excepturi esse ut aspernatur fuga tempora, quas magni, mollitia obcaecati debitis nam.</p>
-        </div>
-        <div class="text-section">
-            <h3>About Me!</h3>
-            <hr/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod similique, itaque nulla quae aut tempora mollitia amet eaque veritatis expedita laboriosam consequatur, enim eum fugiat harum animi officia deserunt labore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ipsa et sequi architecto inventore repellat eius quas rem at unde, recusandae commodi atque, voluptatibus, quam odio deleniti libero quasi excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum ipsum ad a ipsam dignissimos aperiam ab reprehenderit vitae placeat error velit, quisquam totam natus eum quasi tempora quas quod.</p>
-        </div>
-        <br style="clear: both;" />
-    </div>
-    -->
-    <!--
-    <div class="home-entry">
-        <div class="image-entry">
-            <img src="assets/winningboat.jpeg" alt="temp" />
-            <p>In Spring 2018, my boat placed first in our heat at the annual Busfield regatta at Binghamton NY.</p>
-        </div>
-        <div class="image-entry">
-            <img src="assets/morningrow.jpg" alt="temp" />
-            <p>Having rowing practice at the crack of dawn means we are all always tired, but the sunrises make it worth it.</p>
-        </div>
-        <br style="clear: both;" />
-    </div>
-
-    <div class="home-entry">
-        <div class="image-entry">
-            <img src="assets/MorskieOko.jpg" alt="temp" />
-            <p>One of my favorite places in Poland is Morskie Oko, a mountain lake at the base of the Rysy Mountain in the Tatras.
-                During clear days, the lake turns a beautiful shade of green, almost emerald, and the water is entirely clear.
-            </p>
-        </div>
-        <div class="image-entry">
-            <img src="assets/Ogrodzieniec.jpg" alt="temp" />
-            <p>The Ogrodzienec castle, 45 minutes outside of Cracow, was once the home of the Wlodek family of knights. Maybe 
-                they were my ancestors?
-            </p>
-        </div>
-        <br style="clear: both;" />
-    </div>
-    -->
-
 
     <!--Footer-->
     <footer class="page-footer font-small footer-local">
@@ -208,8 +210,6 @@
 
     <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>

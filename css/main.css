@@ -1,7 +1,6 @@
 /*
  * Main stylesheet for my personal webpage.
  *
- *
  */
 
 /* styling for the body/background of page */
@@ -12,156 +11,92 @@ body {
     min-width: 1000px;
     font-size: 1rem;
     font-family: Helvetica;
-}
-
-/* styling for background of header */
-.headerwrapper-local{
-    background-color: #84c8f5;
-    width: 100%;
-}
-
-/* styling for page headers */
-.header-local {
-    color: #000099;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 0;
-    margin: 0;
-    border: 0;
-    font-size: 56px;
-    font-family: Helvetica;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -ms-animation: fadein 2s;
-    -o-animation: fadein 2s;
-}
-
-/* fade-in animation for all browser types */
-
-@keyframes fadein{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-moz-keyframes fadein{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-webkit-keyframes fadein{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-ms-keyframes fadein{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-o-keyframes fadein{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-/* styling for top-of-page button group */
-.navbar-local{
-    width: 100%;
-    background-color: #000099;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    float: left;
-}
-
-.navbar-local a{
     text-align: center;
-    border-style: solid;
-    background-color: #000099;
-    color: #0099ff;
-    width: 13%;
-    min-width: 150px;
-    border: 0;
-    padding-left: 0;
-    padding-right:0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
-    font-family: Helvetica;
-    font-size: 24px;
-    float: left;
-    font-weight: bold;
-    display: block;
-    transition-duration: 0.5s;
 }
 
-.navbar-local .dropdown-local {
-    float: left;
+.top-crop {
+    max-height: 350px;
     overflow: hidden;
-    width: 13%
 }
 
-.dropdown-local .dropbtn-local {
-    font-size: 24px;
-    width: 100%;        
-    /*text-decoration: underline;  */
-    border: none;
-    outline: none;
-    color: #0099ff;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #000099;
-    font-family: Helvetica;
-    margin: 0;
-    cursor: pointer;
-    transition-duration: 0.5s;
-}
-
-.navbar-local a:hover, .dropdown-local:hover .dropbtn-local:hover {
-    background-color: red;
-    text-decoration: underline;
-    color: #000099;
-}
-
-.dropdown-content-local {
-    display: none;
-    position: absolute;
-    width: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content-local a {
-    float: none;
+.top-crop img {
     width: 100%;
-    color: #000099;
-    font-weight: normal;
-    font-size: 18px;
-    background-color: #0099cc;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+    margin-top: -23%;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-.dropdown-content-local a:hover {
-    background-color: #000000;
-    color: red;
+.img-overlay{
+
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+    margin: 0;
 }
 
-.dropdown-local:hover .dropdown-content-local {
-    display: block;
+.img-overlay .overlay-text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
 }
 
+
+.navbar-local {
+    background: #271b1b;
+}
+
+.navbar-local li {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 17rem;
+}
+
+.navbar-local li:hover {
+    background: #706869;
+    border-radius: 3px;
+}
+
+.navbar-local a {
+    color: white;
+    font-family: Helvetica;
+}
+
+.dropdown-local {
+    background: #706869;
+    width: 20rem;
+}
+
+.form-btn-local{
+    background: #2d343f;
+    width: 50%;
+    float: right;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.form-btn-local:hover {
+    background:white;
+    color: black;
+    cursor: pointer;
+}
+
+.form-text-local {
+    float: left;
+}
 
 /* footer at the bottom of each page */
 .footer-local {
     margin-top: 50px;
     padding-top: 20px;
     /* padding-bottom: 10px; */
-    background-color: #000099;
+    background-color: #271b1b;
     background-repeat: repeat;
     color: white;
     
@@ -195,11 +130,11 @@ body {
 .divider {
     margin-bottom: 30px;
     height: 2px;
-    border-color: #000099
+    border-color: #271b1b;
 }
 
 .divider-short {
     margin-bottom: 5px;
     height: 2px;
-    border-color: #000099;
+    border-color: #271b1b;
 }
