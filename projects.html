@@ -44,11 +44,12 @@
                               <a class="dropdown-item" href="projects.html">Projects Home</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="#py_cui">py_cui</a>
-                              <a class="dropdown-item" href="#csplit">csplit</a>
+                              <a class="dropdown-item" href="#SBU-Row_Site">Stony Brook Crew Website</a>
                               <a class="dropdown-item" href="#ADCompVision">ADCompVision</a>
                               <a class="dropdown-item" href="#Focus-Stacking">Focus Stacking</a>
                               <a class="dropdown-item" href="#SAVJ-Canvassing">SAVJ-Canvassing</a>
                               <a class="dropdown-item" href="#ADUVC">ADUVC</a>
+                              <a class="dropdown-item" href="#csplit">csplit</a>
                               <a class="dropdown-item" href="#installSynApps">installSynApps</a>
                               <a class="dropdown-item" href="#Through-The-Ages">Through The Ages</a>
                               <a class="dropdown-item" href="#Rowers-Meet">Rowers Meet</a>
@@ -93,39 +94,37 @@
                 most typical widget types, including labels, buttons, text boxes, and scroll menus/check boxes. It also supports popups of all kinds,
                 including loading bars and icons. It is available to download with <a href="https://pypi.org/project/py-cui/" >pip</a>, and has sources on <a href="https://github.com/jwlodek/py_cui">Github</a>.
             </p>
-            <p>Using py_cui, I have constructed two applications to demo the library's abilities. <a href="https://github.com/jwlodek/pyautogit">PyAutoGit</a>,
+            <p>Using py_cui, I have constructed several applications to demo the library's abilities. <a href="https://github.com/jwlodek/pyautogit">PyAutoGit</a>,
                 is a terminal interface for working with multiple git repositories at once. It is pictured in action to the right, pushing to a repository
                 on my personal github page. I also made <a href="https://github.com/jwlodek/py_cui_2048">py_cui_2048</a>, a simple 2048 clone that runs in your terminal.</p>
-            <p>The library is cross platform, working on windows and linux, and the development is helped by automated unit testing through Travis CI, as well as
+            <p>The library is cross platform, working on windows and linux, and the development is helped by automated unit testing through Github actions, as well as
                 by automated documentation construction. It is still in a beta phase, and future work is planned to add more widgets and features.
             </p>
             <br style="clear: both;" />
         </div>
     </a>
-    <a name="csplit">
+    <a name="SBU-Row_Site">
         <div class="project pinned-project">
             <div class="project-heading">
-                <h3>csplit
-                    <a class="short-icon" href="https://jwlodek.github.io/csplit-docs/">
+                <h3>Stony Brook Crew Website
+                    <a class="short-icon" href="https://stonybrookcrew.com">
                         <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
                         />
                     </a>
-                    <a class="short-icon" href="https://github.com/jwlodek/csplit">
+                    <a class="short-icon" href="https://github.com/vpaladino778/StonyBrookCrewDotCom">
                         <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
                         />
                     </a>
                 </h3>
             </div>
             <hr class="divider" />
-            <img class="project-img" src="assets/csplitImg.png" alt="csplit" style="width:20%;"/>
-            <p style="width:75%;">In order to improve string manipulation in C (splitting in particular), I wrote a small single header C library that contains some useful
-                functions that allow for python-like string operations.</p>
-            <p style="width:75%;">An example of csplit's python like usage would passing an index
-                of negative one to a function in order to perform the function starting from the end of the string. Csplit provides functions for splitting on characters or
-                other strings, has support for performing these operations from the front or rear of the string, and adds support for other useful functions like strip(), startswith()
-                and endswith(). The primary data structure used by csplit is a doubly-linked list called a CSplitList, and is composed of CSplitFragments. Essentially, csplit abstracts
-                splitting C strings away replacing the archaic strtok, at the cost of some memory. I have used csplit in several other personal projects with success. It currently has 24
-                stars on Github.
+            <img class="project-img" src="assets/sbu_crew.png" alt="Stony Brook Crew Website" style="width:45%;"/>
+            <p style="width:50%;">Built a modern replacement website for the Stony Brook Crew team, as a part of a team consisting of several club members.</p>
+            <p style="width:50%;">The site was built using a combination of handwritten html and css, bootstrap, and several open-source javascript libraries
+                for animation and interactivity. The site is built to be responsive on both desktop and mobile, using a combination of navbar and hamburger menu to best
+                support all kinds of devices. The site provides both information about the team's history and current activities for existing
+                members, as well as a form for expressing interest in joining up for new prospective rowers. The built in form for new rowers is tied to the team
+                email, so when an individual fills it out it is sent directly to the club e-board in order to facilitate contacting the new potential member.
             </p>
             <br style="clear: both;" />
         </div>
@@ -248,17 +247,45 @@
             <p>In order to gain support for USB Video Class (UVC) webcam devices for the EPICS area detector software suite, I developed a custom driver
                 using the libusb and libuvc libraries. The driver implements most camera functionality including Exposure Time, Saturation, and Framerate, and
                 supports both 8-bit and 16-bit output modes.</p>
-            <p>The current driver is available in version R1-2. It has been deployed on 3 beamlines at the National Synchrotron Light Source II (NSLS2),
-                with the 17BM beamline currently having 7 devices in production as their main acquisition hardware, along with several more deployments 
+            <p>The current driver is available in version R1-6. It has been deployed on 6 beamlines at the National Synchrotron Light Source II (NSLS2),
+                with the 17BM beamline currently having 12 devices in production as their main acquisition hardware, along with several more deployments 
                 planned. ADUVC has been tested with all areaDetector plugins, and has been used in tandem with several to perform real time data analysis
                 on budget hardware.</p>
             <p>UVC cameras range from cheap consumer webcams to high quality 
                 industrial cameras, giving them a wide breath of use cases. Some current use cases include test benches for further plugin development
                 (because of the simplicity of their setup), monitoring (because of their inexpensiveness), and use in small form factors (they are 
                 available in a variety of sizes and shapes including pencil cameras). The average deployed ADUVC camera at NSLS2 costs under 100 $, while a
-                comparable industrial GigE device (though obviously providing more features) could cost upwards of 700 or 800 $, often more.
+                comparable industrial GigE device (though obviously providing more features) could cost around 700 or 800 $, often more.
             </p>
             <br style="clear:both" />
+        </div>
+    </a>
+
+    <a name="csplit">
+        <div class="project pinned-project">
+            <div class="project-heading">
+                <h3>csplit
+                    <a class="short-icon" href="https://jwlodek.github.io/csplit-docs/">
+                        <img src="assets/external_link.png" alt="External" onmouseover="image_hover(this, external_link_white)" onmouseout="image_hover(this, external_link)"
+                        />
+                    </a>
+                    <a class="short-icon" href="https://github.com/jwlodek/csplit">
+                        <img src="assets/GitHub-Mark-64px.png" alt="Github" onmouseover="image_hover(this, mark_light)" onmouseout="image_hover(this, mark)"
+                        />
+                    </a>
+                </h3>
+            </div>
+            <hr class="divider" />
+            <img class="project-img" src="assets/csplitImg.png" alt="csplit" style="width:20%;"/>
+            <p style="width:75%;">In order to improve string manipulation in C (splitting in particular), I wrote a small single header C library that contains some useful
+                functions that allow for python-like string operations.</p>
+            <p style="width:75%;">An example of csplit's python like usage would be passing an index
+                of negative one to a function in order to perform the function starting from the end of the string. Csplit provides functions for splitting on characters or
+                other strings, has support for performing these operations from the front or rear of the string, and adds support for other useful functions like strip(), startswith()
+                and endswith(). The primary data structure used by csplit is a doubly-linked list called a CSplitList, and is composed of CSplitFragments. Essentially, csplit abstracts
+                splitting C strings away replacing the archaic strtok, at the cost of some memory. I have used csplit in several other personal projects with success.
+            </p>
+            <br style="clear: both;" />
         </div>
     </a>
 
@@ -454,7 +481,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://www.stonybrookcrew.com">
+                            <a href="https://stonybrookcrew.com">
                                 <u>The Stony Brook Rowing team website</u>
                             </a>
                         </li>
@@ -477,7 +504,7 @@
                         </li>
                     </ul>
                     <br style="clear: both;" />
-                    <p class="footer-copy-local">Copyright(c): 2018-19 - Jakub Wlodek</p>
+                    <p class="footer-copy-local">Copyright(c): 2018-21 - Jakub Wlodek</p>
                 </div>
             </div>
         </div>
